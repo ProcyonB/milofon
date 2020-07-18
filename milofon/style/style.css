@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: EDEDED;
+}
+
+.header {
+    background-image: url('../src/milo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Amatic SC', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #070E2B;
+}
+
+a {
+    margin: 30px;
+    text-decoration: none;
+    color: #070E2B;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: rgb(75, 147, 255);
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.glukofon {
+    margin-top: 15px;
+    background-image: url('../src/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.handmade {
+    font-family: 'Amatic SC', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #DEB534;
+}
+
+button,
+.text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.text {
+    max-width: 60%;
+    text-align: center;
+}
