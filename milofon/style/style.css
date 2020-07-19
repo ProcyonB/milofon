@@ -3,13 +3,13 @@
 *:after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  background-color: EDEDED;
 }
 
 .header {
-  background-image: url("../src/milo.png");
+  background: url("../src/milo1.png") center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -21,13 +21,12 @@ body {
   font-size: 20px;
   line-height: 38px;
   text-transform: uppercase;
-  color: #070e2b;
 }
 
 a {
   margin: 30px;
   text-decoration: none;
-  color: #070e2b;
+  color: #ededed;
   transition: all 0.4s;
   position: relative;
 }
@@ -44,9 +43,11 @@ a::before {
   transition: 0.2s;
   transform: scaleX(0);
 }
+
 a:hover {
   color: rgb(75, 147, 255);
 }
+
 a:hover:before {
   transform: scaleX(1);
 }
@@ -60,10 +61,25 @@ a:hover:before {
   display: flex;
   justify-content: space-between;
 }
+
+/* .for_slides {
+  margin-top: 15px;
+  background-color: lavender;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+
 .slider {
   min-width: 0;
+  /* max-width: 70%; */
+  /* max-height: 80%; */
   position: relative;
+  /* height: 100vh; */
+  margin-bottom: 10px;
+  /* margin-top: 20px; */
 }
+
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -72,16 +88,19 @@ a:hover:before {
   width: 30px;
   height: 30px;
 }
+
 .slider .slick-arrow.slick-prev {
-  left: 10px;
+  left: 15px;
   background: url("../src/prev.svg") no-repeat center center;
   border: none;
 }
+
 .slider .slick-arrow.slick-next {
-  right: 10px;
+  right: 15px;
   background: url("../src/next.svg") no-repeat center center;
   border: none;
 }
+
 .slider .slick-dots {
   display: flex;
   align-items: center;
@@ -95,6 +114,7 @@ a:hover:before {
   list-style: none;
   margin: 0px 5px;
 }
+
 .slider .slick-dots button {
   font-size: 0;
   width: 10px;
@@ -110,9 +130,11 @@ a:hover:before {
   width: 12px;
   height: 12px;
 }
+
 .slick-track {
   display: flex;
 }
+
 .slick-list {
   overflow: hidden;
 }
@@ -120,7 +142,7 @@ a:hover:before {
 .slider_item {
   margin-top: 10px;
   min-width: 0;
-  background-image: url("../src/2.png");
+  background-image: url("../src/milo.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -147,14 +169,16 @@ a:hover:before {
 }
 
 .btn {
+  margin-top: 30px;
   width: 200px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(136, 178, 241);
-  border: 0.5px solid #070e2b;
+  /* background-color: rgb(136, 178, 241); */
+  border: 0.5px solid #deb534;
+  /* color: #deb534; */
   transition: all 0.4s;
   position: relative;
   -webkit-box-shadow: -1px 7px 39px -3px rgba(7, 14, 43, 0.48);
@@ -205,4 +229,141 @@ a:hover:before {
 .text {
   max-width: 60%;
   text-align: center;
+}
+
+.our_goal {
+  height: 50vh;
+  background: url("../src/leafs.png") no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.our_goal h2 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #ededed;
+}
+.goal {
+  color: #deb534;
+}
+.about_manufactory {
+  height: 100vh;
+  background: url("../src/51.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 20px;
+}
+.service {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #070e2b;
+  color: #ededed;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+}
+figure h4 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #deb534;
+  transition: 0.2s;
+  transform: translateY(32px);
+}
+figure p {
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  color: #ededed;
+  max-width: 150px;
+  transition: 0.2s;
+  transform: translateY(-32px);
+  opacity: 0;
+  visibility: hidden;
+}
+figure::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  transition: 0.2s;
+  transform: scaleX(0);
+}
+figure::after {
+  position: absolute;
+  content: "";
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  transition: 0.2s;
+  transform: scaleY(0);
+}
+
+figure:hover::before,
+figure:hover::after {
+  transform: scale(1);
+}
+figure:hover h4,
+figure:hover p {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.charity {
+  margin-top: 10px;
+  height: 100vh;
+  background: url("../src/благотв-ть.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.charity h2 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #deb534;
+  align-self: flex-end;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.charity p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #ededed;
+  max-width: 200px;
+  align-self: stretch;
+  margin-left: 150px;
+  margin-top: 250px;
 }
