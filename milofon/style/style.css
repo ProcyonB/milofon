@@ -91,7 +91,7 @@ body {
 
 .slider .slick-arrow.slick-prev {
   left: 15px;
-  background: url("../src/prev.svg") no-repeat center center;
+  background: url("../src/prev.svg");
   border: none;
 }
 
@@ -195,7 +195,7 @@ body {
   /* background-color: rgb(136, 178, 241); */
   border: 0.5px solid #deb534;
   /* color: #deb534; */
-  transition: all 0.4s;
+  transition: all 0.2s;
   position: relative;
   -webkit-box-shadow: -1px 7px 39px -3px rgba(7, 14, 43, 0.48);
   -moz-box-shadow: -1px 7px 39px -3px rgba(7, 14, 43, 0.48);
@@ -431,7 +431,7 @@ figure:hover p {
   text-transform: uppercase;
   color: #ededed;
 }
-input,
+.contact_form,
 textarea,
 button[type="submit"] {
   border-radius: 7px;
@@ -511,4 +511,131 @@ footer {
 }
 footer a {
   font-weight: 300;
+}
+.head {
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+}
+.head img {
+  width: 15%;
+  height: 10%;
+  padding: 10px;
+  margin: 10px;
+}
+.home {
+  display: inline-block;
+  background: url("../src/home1.svg") no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.first-screen {
+  height: 110vh;
+  background: url("../src/leafs.png") no-repeat center;
+  background-size: cover;
+}
+.h1 {
+  margin-top: -40px;
+  text-align: center;
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  text-transform: uppercase;
+  color: #deb534;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.card-item {
+  width: 20%;
+  max-height: 35%;
+  padding: 1.5%;
+  text-align: left;
+  background: #ededed;
+  opacity: 0.75;
+  border-radius: 10%;
+  border: 1px solid #deb534;
+  transition: 0.2s;
+}
+.card-item:hover {
+  opacity: 0.9;
+  border: 1px solid #136161;
+}
+.card-item h3 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 150%;
+  text-transform: uppercase;
+  color: #136161;
+}
+.card-item p {
+  font-family: "Oswald", sans-serif;
+  color: #070e2b;
+}
+.card-item img {
+  width: 25%;
+  height: 20%;
+}
+.constructor {
+  margin-top: 10px;
+  height: 250vh;
+  /* background: url("../src/leafs.png") no-repeat; */
+}
+.constructor h2 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 170%;
+  text-transform: uppercase;
+  color: #070e2b;
+  text-align: center;
+}
+.constructor h3 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 150%;
+  text-transform: uppercase;
+  color: #136161;
+  text-align: center;
+}
+.constructor a {
+  transform: translateX(265%);
+  box-shadow: none;
+  height: 3%;
+}
+.constructor img {
+  display: block;
+  width: 14%;
+  height: 14%;
+  margin: 2%;
+  opacity: 0.7;
+}
+.constructor img:hover {
+  opacity: 1;
+}
+#big {
+  width: 20%;
+  height: 20%;
+}
+.constuctor-item {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 120%;
+  color: #070e2b;
+}
+.img_radio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 0.5%;
+  margin-top: 3%;
+  background-color: #136161;
 }
