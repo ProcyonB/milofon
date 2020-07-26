@@ -167,18 +167,22 @@ body {
   font-size: 20px;
   color: #ededed;
 }
+
 #eco {
   background: url("../src/fern.jpg") no-repeat center;
   background-size: cover;
 }
+
 #handmade {
   background: url("../src/handmade.jpg") no-repeat center;
   background-size: cover;
 }
+
 #individual {
   background: url("../src/individual.jpg") no-repeat center;
   background-size: cover;
 }
+
 #unic {
   background: url("../src/unic.jpg") no-repeat center;
   background-size: cover;
@@ -372,6 +376,10 @@ figure:hover p {
   visibility: visible;
 }
 
+figure:hover p {
+  transform: translateY(-10px);
+}
+
 .charity {
   margin-top: 10px;
   height: 50vh;
@@ -407,20 +415,28 @@ figure:hover p {
     margin-left: 150px;
     margin-top: 250px; */
 }
+
 .contact {
   background: url("../src/contact.png") no-repeat;
   background-size: contain;
   height: 100vh;
+  display: flex;
+  justify-content: flex-end;
 }
+
 .decor {
   max-width: 400px;
-  margin: 50px auto 0;
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  margin-right: 3%;
+  /* margin: 50px auto 0; */
   background: url("../src/leafs.jpg") no-repeat center;
   background-size: contain;
   /* border-radius: 10px; */
   /* opacity: 0.7; */
   padding: 50px;
-  transform: translateX(300px);
+  /* transform: translateX(300px); */
   /* transform: translateY(100px); */
 }
 
@@ -431,6 +447,7 @@ figure:hover p {
   text-transform: uppercase;
   color: #ededed;
 }
+
 .contact_form,
 textarea,
 button[type="submit"] {
@@ -444,13 +461,16 @@ button[type="submit"] {
   padding: 0 20px;
   margin-bottom: 10px;
 }
+
 button[type="submit"] {
   margin-top: 30px;
 }
+
 .contacts {
   background: #136161;
   height: 50vh;
 }
+
 .cont {
   text-align: center;
   padding: 40px;
@@ -460,17 +480,20 @@ button[type="submit"] {
   text-transform: uppercase;
   color: #deb534;
 }
+
 .columns {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   color: #ededed;
 }
+
 .columns p,
 .columns a {
   font-family: "Oswald", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
+
 .all_contacts {
   display: flex;
   justify-content: space-around;
@@ -488,18 +511,22 @@ button[type="submit"] {
   background: url("../src/instagram.svg") no-repeat;
   background-size: contain;
 }
+
 .vk {
   background: url("../src/vk.svg") no-repeat;
   background-size: contain;
 }
+
 .youtube {
   background: url("../src/youtube.svg") no-repeat;
   background-size: contain;
 }
+
 footer img {
   width: 10%;
   height: 8%;
 }
+
 footer {
   margin-top: auto;
   max-height: 150px;
@@ -509,20 +536,24 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+
 footer a {
   font-weight: 300;
 }
+
 .head {
   max-height: 150px;
   display: flex;
   align-items: center;
 }
+
 .head img {
   width: 15%;
   height: 10%;
   padding: 10px;
   margin: 10px;
 }
+
 .home {
   display: inline-block;
   background: url("../src/home1.svg") no-repeat;
@@ -531,11 +562,13 @@ footer a {
   height: 40px;
   margin-left: 10px;
 }
+
 .first-screen {
   height: 110vh;
   background: url("../src/leafs.png") no-repeat center;
   background-size: cover;
 }
+
 .h1 {
   margin-top: -40px;
   text-align: center;
@@ -545,11 +578,13 @@ footer a {
   text-transform: uppercase;
   color: #deb534;
 }
+
 .cards {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
+
 .card-item {
   width: 20%;
   max-height: 35%;
@@ -561,29 +596,35 @@ footer a {
   border: 1px solid #deb534;
   transition: 0.2s;
 }
+
 .card-item:hover {
   opacity: 0.9;
   border: 1px solid #136161;
 }
+
 .card-item h3 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-size: 150%;
   text-transform: uppercase;
   color: #136161;
 }
+
 .card-item p {
   font-family: "Oswald", sans-serif;
   color: #070e2b;
 }
+
 .card-item img {
   width: 25%;
   height: 20%;
 }
+
 .constructor {
   margin-top: 10px;
-  height: 250vh;
+  height: 350vh;
   /* background: url("../src/leafs.png") no-repeat; */
 }
+
 .constructor h2 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-size: 170%;
@@ -591,6 +632,7 @@ footer a {
   color: #070e2b;
   text-align: center;
 }
+
 .constructor h3 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-size: 150%;
@@ -598,11 +640,13 @@ footer a {
   color: #136161;
   text-align: center;
 }
+
 .constructor a {
-  transform: translateX(265%);
+  /* transform: translateX(265%); */
   box-shadow: none;
-  height: 3%;
+  height: 4%;
 }
+
 .constructor img {
   display: block;
   width: 14%;
@@ -610,13 +654,16 @@ footer a {
   margin: 2%;
   opacity: 0.7;
 }
+
 .constructor img:hover {
   opacity: 1;
 }
+
 #big {
   width: 20%;
   height: 20%;
 }
+
 .constuctor-item {
   display: flex;
   justify-content: space-around;
@@ -626,6 +673,7 @@ footer a {
   font-size: 120%;
   color: #070e2b;
 }
+
 .img_radio {
   text-align: center;
   display: flex;
@@ -638,4 +686,51 @@ footer a {
   height: 0.5%;
   margin-top: 3%;
   background-color: #136161;
+}
+
+.color {
+  flex-direction: column;
+}
+
+.fin_price {
+  background: url('../src/leafs.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 3%;
+}
+
+.order_form {
+  transform: none;
+  width: 40%;
+  height: 80%;
+  background: #ededed;
+  opacity: 0.8;
+  border-radius: 10%;
+  transition: 0.2s;
+}
+
+.price p {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #deb534;
+  text-align: left;
+}
+
+#price_comment {
+  font-family: "Oswald", sans-serif;
+  font-size: 80%;
+  font-weight: 300;
+  color: #ededed;
+}
+
+.order_form:hover {
+  opacity: 0.9;
+}
+
+.shop {
+  justify-content: space-around;
+  /* height: 15vh; */
 }

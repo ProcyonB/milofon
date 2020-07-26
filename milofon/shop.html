@@ -50,7 +50,7 @@
         </div>
       </div>
     </section>
-    <section class="constructor">
+    <form action="" method="post"><section class="constructor">
       <h2>собрать глюкофон</h2>
       <!-- size -->
       <h3>диаметр</h3>
@@ -79,19 +79,19 @@
         <div class="img_radio">
           <img src="../milofon/src/size.svg" alt="" />
           <label for="8"
-            ><input type="radio" name="count" id="8" value="8" checked />8 лепестков</label
+            ><input type="radio" name="count" id="8" value="8 шт" checked />8 лепестков</label
           >
           <p><strong>6000 р</strong></p>
         </div>
         <div class="img_radio">
           <img src="../milofon/src/size.svg" alt="" />
           <label for="10"
-            ><input type="radio" name="count" id="10" value="10" />10 лепестков</label
+            ><input type="radio" name="count" id="10" value="10 шт" />10 лепестков</label
           >
           <p><strong>4000 р</strong></p>
         </div>
       </div>
-      <a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a>
+      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       <div class="line"></div>
       <!-- shape of leafs -->
       <h3>форма лепестков</h3>
@@ -118,48 +118,115 @@
           <p><strong>4000 р</strong></p>
         </div>
       </div>
-      <a href="#" style="text-decoration: none; color: #070e2b; text-align: center;" class="btn">Посмотреть примеры</a>
+      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       <div class="line"></div>
       <!-- color -->
       <h3>Оформление</h3>
-      <div class="constuctor-item">
-        <div class="img_radio">
-          <img id="big" src="../milofon/src/size.svg" alt="" />
-          <label for="30"
-            ><input type="radio" name="" id="30" value="30 cm" checked />&#8960 30
-            см</label
+      <div class="constuctor-item color">
+        <div class='row'><div class="img_radio">
+          <img src="../milofon/src/size.svg" alt="" />
+          <label for="burning"
+            ><input type="radio" name="color" id="burning" value="burning" checked />Обжиг</label
           >
           <p><strong>6000 р</strong></p>
         </div>
         <div class="img_radio">
           <img src="../milofon/src/size.svg" alt="" />
-          <label for="22"
-            ><input type="radio" name="" id="22" value="22 cm" />&#8960 22
-            см</label
+          <label for="coloration"
+            ><input type="radio" name="color" id="coloration" value="coloration" />Окрашивание в один цвет</label
           >
-          <p><strong>4000 р</strong></p>
+          <!-- <p style="font-size: 60%;">Список актуальных цветов пришлем в ответном письме</p> -->
+          <p><strong>0 р</strong></p>
         </div>
-        
+        <div class="img_radio">
+          <img src="../milofon/src/size.svg" alt="" />
+          <label for="cosmos"
+            ><input type="radio" name="color" id="cosmos" value="cosmos" />"Космос"</label
+          >
+          <p><strong>6000 р</strong></p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
+      <h3 style="font-size: 100%;">Гравировка (возможна только при выборе обжига)</h3>
+        <div class='row'>
+        <div class="img_radio">
+          <img src="../milofon/src/size.svg" alt="" />
+          <label for="2x2"
+            ><input type="radio" name="etching" id="2x2" value="2x2" />2х2 см</label>
+          
+          <p><strong>400 р</strong></p>
+        </div>
+        <div class="img_radio">
+          <img src="../milofon/src/size.svg" alt="" />
+          <label for="5x5"
+            ><input type="radio" name="etching" id="5x5" value="5x5" />5х5 см</label>
+          <p><strong>400 р</strong></p>
+        </div>
+        <div class="img_radio">
+          <img src="../milofon/src/size.svg" alt="" />
+          <label for="10x10"
+            ><input type="radio" name="etching" id="10x10" value="10x10" />10х10 см</label>
+          <p><strong>400 р</strong></p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       </div>
       <div class="line"></div>
 
       <!-- acessuares -->
       <h3>аксессуары</h3>
-      <div class="constuctor-item">
+      <div class="constuctor-item" >
         <div class="img_radio">
           <img src="../milofon/src/bag.svg" alt="" />
           <label for="bag"
-            ><input type="checkbox" name="bag" id="bag" value="bag" />Чехол для глюкофона</label
-          >
+            ><input type="checkbox" name="bag" id="bag" value="bag" />Чехол для глюкофона</label>
           <p><strong>6000 р</strong></p>
         </div>
         <div class="img_radio">
           <img src="../milofon/src/sticks.svg" alt="" />
           <label for="sticks"
-            ><input type="checkbox" name="sticks" id="sticks" value="sticks" />Палочки (2 шт)</label
-          >
+            ><input type="checkbox" name="sticks" id="sticks" value="sticks" />Палочки (2 шт)</label >
           <p><strong>0 р</strong></p>
         </div>
     </section>
+    <div class="fin_price">
+      <div class="order_form decor">
+        <input
+          class="contact_form"
+          type="text"
+          placeholder="Ваше имя" name='name'
+          required/>
+        <input class="contact_form" type="email" placeholder="Email" name='email' required />
+        <input class="contact_form" type="tel" name="phone" id="" placeholder="+7(999)999-99-99" required>
+        <input class="contact_form" type="url" name="social" id="" placeholder="Ссылка на аккаунт ВК (по желанию)">
+        <textarea placeholder="Комментарий к заказу (предпочтительный способ связи, вопросы, пожелания...)" name='comment' rows="7" ></textarea>
+        <button class="btn" type="submit">Написать</button>
+      </div>
+      <div class="price">
+        <p>Итого: 0 р</p>
+        <p id='price_comment'>(сумма может измениться, если захотите добавить дополнительные опции в дальнейшем)</p>
+      </div>
+      
+    </div>
+  </form>
+  <footer class='shop'>
+    <img src="../milofon/src/layer.svg" alt="logo" />
+    <a class="animated" href="../milofon/index.html">на главную</a>
+    <a class="animated" href="mailto:myedition@yandex.ru"
+              >myedition@yandex.ru</a
+            >
+
+    
+    <a class="vk" href="https://vk.com/milofonproject" target="_blank"></a>
+    <a
+      class="inst"
+      href="https://www.instagram.com/milofonist/"
+      target="_blank"
+    ></a>
+    <a class="youtube" href="https://youtube.com/" target="_blank"></a>
+    <a class="animated" href="https://t.me/Procyon_B" target="_blank"
+      >by Procyon_b</a
+    >
+  </footer>
   </body>
 </html>
