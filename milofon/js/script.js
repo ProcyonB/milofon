@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).on("click", ".header a", function () {
+$(document).on("click", ".animated_a", function () {
   var linkID = $(this).attr("href");
   $("html, body").animate(
     {
@@ -17,4 +17,16 @@ $(document).on("click", ".header a", function () {
     },
     "slow"
   );
+  return false;
 });
+// var rellax = new Rellax(".rellax", {
+//   speed: 2,
+//   center: false,
+//   wrapper: null,
+//   round: true,
+//   vertical: true,
+//   horizontal: false,
+//   zindex: -10,
+// });
+new WOW().init();
+// const swup = new Swup();

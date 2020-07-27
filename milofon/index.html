@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MILOFON</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald:wght@200&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="../milofon/style/animate.css" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <!-- Первый экран -->
     <section class="header">
       <div class="first-line">
-        <a class="animated" href="#gluk">о глюкофонах</a>
-        <a class="animated" href="../milofon/shop.html">конструктор</a>
+        <a class="animated_a" href="#gluk">о глюкофонах</a>
+        <a class="animated_a" href="../milofon/shop.html">конструктор</a>
       </div>
       <div class="second-line">
-        <a class="animated" href="#manufactory">о мастерской</a>
-        <a class="animated" href="#contacts">контакты</a>
+        <a class="animated_a" href="#manufactory">о мастерской</a>
+        <a class="animated_a" href="#contacts">контакты</a>
       </div>
     </section>
     <!-- наша цель -->
-    <section class="our_goal">
-      <h2>
+    <section class="our_goal wow fadeInDown">
+      <h2 class="wow fadeInDown">
         наша <span class="goal">цель</span> - мировое господство глюкофонов
       </h2>
     </section>
@@ -86,7 +89,7 @@
       </div>
 
       <div id="eco" class="slider_item">
-        <h3 class="feature">эко-подход</h3>
+        <h3 class="feature">экологичность</h3>
         <h5 class="text">
           Идейные соображения высшего порядка, а также реализация намеченных
           плановых заданий требуют определения и уточнения направлений
@@ -105,7 +108,7 @@
       </div>
     </section>
     <!-- о мастерской -->
-    <section class="about_manufactory">
+    <section class="about_manufactory wow fadeInDown" offset="50">
       <div id="manufactory" class="service">
         <div class="row">
           <figure>
@@ -150,7 +153,7 @@
       </div>
     </section>
     <!-- благотворительность -->
-    <section class="charity">
+    <section class="charity wow fadeIn">
       <h2>благотворительная деятельность</h2>
       <p>
         Далеко-далеко за словесными горами в стране гласных и согласных живут
@@ -159,7 +162,7 @@
     </section>
     <!-- обратная связь -->
     <section class="contact">
-      <form class="decor">
+      <form class="decor wow fadeInRight" offset="50">
         <h3>Напишите нам</h3>
         <input
           class="contact_form"
@@ -188,35 +191,35 @@
     <section id="contacts" class="contacts">
       <div class="cont">Контакты</div>
       <div class="all_contacts">
-        <div class="columns">
+        <div class="columns wow fadeInLeft">
           <p>
-            Viber/WA:<a class="animated" href="tel:+79002648808"
+            Viber/WA:<a class="animated_a" href="tel:+79002648808"
               >8(900)-264-88-08</a
             >
           </p>
           <p>
-            Email:<a class="animated" href="mailto:myedition@yandex.ru"
+            Email:<a class="animated_a" href="mailto:myedition@yandex.ru"
               >myedition@yandex.ru</a
             >
           </p>
           <p>
             Отзывы:<a
-              class="animated"
+              class="animated_a"
               href="https://vk.com/topic-157161753_36717193/"
               target="_blank"
               >Отзывы в группе в VK</a
             >
           </p>
         </div>
-        <div class="columns">
+        <div class="columns wow fadeInRight">
           <p>
-            VK:<a class="animated" href="https://vk.com/milofonproject"
+            VK:<a class="animated_a" href="https://vk.com/milofonproject"
               >milofonproject</a
             >
           </p>
           <p>
             Instagram:<a
-              class="animated"
+              class="animated_a"
               href="https://www.instagram.com/milofonist/"
               target="_blank"
               >milofonist</a
@@ -224,7 +227,7 @@
           </p>
           <p>
             YouTube:<a
-              class="animated"
+              class="animated_a"
               href="https://youtube.com/"
               target="_blank"
               >Послушать инструменты</a
@@ -235,9 +238,9 @@
     </section>
     <footer>
       <img src="../milofon/src/layer.svg" alt="logo" />
-      <a class="animated" href="#gluk">о глюкофонах</a>
-      <a class="animated" href="#manufactory">о мастерской</a>
-      <a class="animated" href="../milofon/shop.html">конструктор</a>
+      <a class="animated_a" href="#gluk">о глюкофонах</a>
+      <a class="animated_a" href="#manufactory">о мастерской</a>
+      <a class="animated_a" href="../milofon/shop.html">конструктор</a>
       <a class="vk" href="https://vk.com/milofonproject" target="_blank"></a>
       <a
         class="inst"
@@ -245,12 +248,14 @@
         target="_blank"
       ></a>
       <a class="youtube" href="https://youtube.com/" target="_blank"></a>
-      <a class="animated" href="https://t.me/Procyon_B" target="_blank"
+      <a class="animated_a" href="https://t.me/Procyon_B" target="_blank"
         >by Procyon_b</a
       >
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="../milofon/slick/slick.min.js"></script>
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
+    <script src="../milofon/js/wow.min.js"></script>
     <script type="text/javascript" src="../milofon/js/script.js"></script>
   </body>
 </html>

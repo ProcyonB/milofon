@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
 }
 
-.animated {
+.animated_a {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 
-.animated::before {
+.animated_a::before {
   position: absolute;
   content: "";
   left: 0;
@@ -44,11 +44,11 @@ body {
   transform: scaleX(0);
 }
 
-.animated:hover {
+.animated_a:hover {
   color: rgb(75, 147, 255);
 }
 
-.animated:hover:before {
+.animated_a:hover:before {
   transform: scaleX(1);
 }
 
@@ -621,8 +621,9 @@ footer a {
 
 .constructor {
   margin-top: 10px;
-  height: 350vh;
-  /* background: url("../src/leafs.png") no-repeat; */
+  height: 380vh;
+  /* background: url("../src/Group3.png") no-repeat top;
+  background-size: contain; */
 }
 
 .constructor h2 {
@@ -642,18 +643,18 @@ footer a {
 }
 
 .constructor a {
-  /* transform: translateX(265%); */
   box-shadow: none;
   height: 4%;
 }
 
-.constructor img {
+.constructor .gl_pic {
   display: block;
   width: 14%;
   height: 14%;
   margin: 2%;
   opacity: 0.7;
 }
+
 
 .constructor img:hover {
   opacity: 1;
