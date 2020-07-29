@@ -16,10 +16,10 @@
     <section  class="first-screen">
       <div  class="head " >
         <img src="../milofon/src/layer.svg" alt="logo" />
-        
         <a class="home" href="../milofon/index.html"></a>
       </div>
       <div class="h1"><h1>Как сделать заказ</h1></div>
+      
       <div class="cards">
         <div class="card-item">
           <img src="../milofon/src/draw.svg" alt="create" />
@@ -55,72 +55,75 @@
     </section>
     <form action="" method="post"><section class="constructor" >
       <h2>собрать глюкофон</h2>
+
       <!-- size -->
       <h3>диаметр</h3>
       <div class="constuctor-item wow fadeInDown">
         <div class="img_radio ">
           <img class="gl_pic" id="big" src="../milofon/src/size.svg" alt="" />
           <label for="30"
-            ><input type="radio" name="size" id="30" value="30 cm" checked='true' />&#8960 30
+            ><input type="radio" name="size" id="30" value="30 cm" />&#8960 30
             см</label
           >
-          <p><strong>6000 р</strong></p>
+          <p><strong><span id='30 cm'>6000</span> р</strong></p>
         </div>
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
           <label for="22"
-            ><input type="radio" name="size" id="22" value="22 cm" />&#8960 22
+            ><input type="radio" name="size" id="22" value="22 cm"/>&#8960 22
             см</label
           >
-          <p><strong>4000 р</strong></p>
+          <p><strong><span id='22 cm'>4000</span> р</strong></p>
         </div>
       </div>
       <div class="line"></div>
+
       <!-- count of leafs -->
       <h3>количество лепестков</h3>
       <div class="constuctor-item wow fadeInDown">
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
           <label for="8"
-            ><input type="radio" name="count" id="8" value="8 шт" checked />8 лепестков</label
+            ><input type="radio" name="count" id="8" value="8 лепестков"/>8 лепестков</label
           >
-          <p><strong>6000 р</strong></p>
+          <p><strong><span id='8 лепестков'>0</span> р</strong></p>
         </div>
         <div class="img_radio">
-          <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
+          <img class="gl_pic" src="../milofon/src/leafs_10.svg" alt="" />
           <label for="10"
-            ><input type="radio" name="count" id="10" value="10 шт" />10 лепестков</label
+            ><input type="radio" name="count" id="10" value="10 лепестков" />10 лепестков</label
           >
-          <p><strong>4000 р</strong></p>
+          <p><strong><span id='10 лепестков'>400</span>  р</strong></p>
         </div>
       </div>
       <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       <div class="line"></div>
+
       <!-- shape of leafs -->
       <h3>форма лепестков</h3>
       <div><img  src="../milofon/src/Group3.png" alt="" style="z-index: -10; width: 1200px; height: 800px; position: absolute;"></div>
 
       <div class="constuctor-item wow fadeInDown">
         <div class="img_radio">
-          <img class="gl_pic" src="../milofon/src/rect-shape.svg" alt="" />
+          <img class="gl_pic" id="rectangle_shape" src="../milofon/src/rect-shape.svg" alt="" />
           <label for="rect"
-            ><input type="radio" name="shape" id="rect" value="rectangle" checked />Квадратная</label
+            ><input type="radio" name="shape" id="rect" value="rectangle" />Квадратная</label
           >
-          <p><strong>6000 р</strong></p>
+          <p><strong>0 р</strong></p>
         </div>
-        <div class="img_radio">
-          <img class="gl_pic" src="../milofon/src/leaf-shape.svg" alt="" />
+        <div class="img_radio tooltip" data-title="Форма недоступна при выборе: 22 см + 10 лепестков">
+          <img class="gl_pic" id="leafs_shape" src="../milofon/src/leaf-shape.svg" alt="" />
           <label for="leafs"
-            ><input type="radio" name="shape" id="leafs" value="leafs" checked />Листочки</label
+            ><input type="radio" name="shape" id="leafs" value="leafs" />Листочки</label
           >
-          <p><strong>6000 р</strong></p>
+          <p><strong>0 р</strong></p>
         </div>
         <div class="img_radio">
-          <img class="gl_pic" src="../milofon/src/geometry-shape.svg" alt="" />
+          <img class="gl_pic" id="geometry_shape" src="../milofon/src/geometry-shape.svg" alt="" />
           <label for="geometry"
             ><input type="radio" name="shape" id="geometry" value="geometry" />Геометрия</label
           >
-          <p><strong>4000 р</strong></p>
+          <p><strong>0 р</strong></p>
         </div>
       </div>
       <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
@@ -132,71 +135,71 @@
           <div class="img_radio">
             <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
             <label for="coloration"
-              ><input type="radio" name="color" id="coloration" value="coloration" />Окрашивание в один цвет</label
+              ><input type="radio" name="color" id="coloration" value="окрашивание в один цвет"/>Окрашивание в один цвет</label
             >
             <!-- <p style="font-size: 60%;">Список актуальных цветов пришлем в ответном письме</p> -->
-            <p><strong>0 р</strong></p>
+            <p><strong><span id="окрашивание в один цвет"></span> 0 р</strong></p>
           </div>
           <div class="img_radio">
             <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
             <label for="cosmos"
-              ><input type="radio" name="color" id="cosmos" value="cosmos" />"Космос"</label
+              ><input type="radio" name="color" id="cosmos" value="космос" />"Космос"</label
             >
-            <p><strong>6000 р</strong></p>
+            <p><strong><span id='космос'>600</span>  p</strong></p>
           </div>
           <div class="img_radio">
             <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
             <label for="burning"
-              ><input type="radio" name="color" id="burning" value="burning" checked />Обжиг</label
+              ><input type="radio" name="color" id="burning" value="обжиг"/>Обжиг + лак</label
             >
-            <p><strong>6000 р</strong></p>
+            <p><strong><span id="обжиг">800</span> р</strong></p>
           </div>
-          <!-- </div> -->
-
       </div>
       <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
-      <h3 style="font-size: 100%;">Гравировка (возможна только при выборе обжига)</h3>
-        <div class='row'>
+      <h3 style="font-size: 100%;">Гравировка ручной работы
+        (только на обжиге)</h3>
+        <div class='row tooltip' data-title="Возможна только при выборе обжига">
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
           <label for="3x3"
-            ><input type="radio" name="etching" id="3x3" value="3x3" />3x3 см</label>
-          
-          <p><strong>500 р</strong></p>
+            ><input type="radio" name="etching" id="3x3" value="гравировка:3x3" />3x3 см</label>
+          <p><strong><span id="гравировка:3x3">500</span> р</strong></p>
         </div>
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
-          <label for="5x5"
-            ><input type="radio" name="etching" id="5x5" value="5x5" />5х5 см</label>
-          <p><strong>1000 р</strong></p>
+          <label for="6x6"
+            ><input type="radio" name="etching" id="6x6" value="гравировка:6x6" />6x6 см</label>
+          <p><strong><span id="гравировка:6x6">1000</span> р</strong></p>
         </div>
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
-          <label for="10x10"
-            ><input type="radio" name="etching" id="10x10" value="10x10" />10х10 см</label>
-          <p><strong>1800 р</strong></p>
+          <label for="12x12"
+            ><input type="radio" name="etching" id="12x12" value="гравировка:12x12" />12x12 см</label>
+          <p><strong><span id="гравировка:12x12">1800</span> р</strong></p>
         </div>
       </div>
       <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       </div>
       <div class="line"></div>
 
-      <!-- acessuares -->
+      <!-- accessories -->
       <h3>аксессуары</h3>
       <div class="constuctor-item wow fadeInDown" >
         <div class="img_radio acces">
           <img class="gl_pic" src="../milofon/src/bag.svg" alt="" />
           <label for="bag"
-            ><input type="checkbox" name="bag" id="bag" value="bag" />Чехол для глюкофона</label>
-          <p><strong>6000 р</strong></p>
+            ><input type="checkbox" name="bag" id="bag" value="сумка" />Сумка-рюкзачок Milofon</label>
+          <p><strong><span id="сумка">600</span> р</strong></p>
         </div>
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/sticks.svg" alt="" />
           <label for="sticks"
-            ><input type="checkbox" name="sticks" id="sticks" value="sticks" />Палочки (2 шт)</label >
-          <p><strong>0 р</strong></p>
+            ><input type="checkbox" name="sticks" id="sticks" value="палочки" />Палочки (2 шт)</label >
+          <p><strong><span id="палочки">0</span> р</strong></p>
         </div>
     </section>
+
+    <!-- форма для заказа -->
     <div class="fin_price wow fadeInLeft" offset='50' data-wow-duration="1s">
       <div class="order_form decor">
         <input
@@ -211,12 +214,14 @@
         <button class="btn" type="submit">Написать</button>
       </div>
       <div class="price">
-        <p>Итого: 0 р</p>
+        <p>Итого: <span id="total_price">0</span>  р</p>
         <p id='price_comment'>(сумма может измениться, если захотите добавить дополнительные опции в дальнейшем)</p>
       </div>
       
     </div>
   </form>
+
+  <!-- футер -->
   <footer class='shop'>
     <img src="../milofon/src/layer.svg" alt="logo" />
     <a class="animated_a" href="../milofon/index.html">на главную</a>

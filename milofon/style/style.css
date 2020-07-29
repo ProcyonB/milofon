@@ -2,6 +2,9 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
 }
 
 body {
@@ -734,4 +737,33 @@ footer a {
 .shop {
   justify-content: space-around;
   /* height: 15vh; */
+}
+
+.tooltip {
+  position: relative;
+
+}
+
+.tooltip::before {
+  position: absolute;
+  content: attr(data-title);
+  display: block;
+  border-radius: 10px;
+  background: #136161;
+  opacity: 0.8;
+  padding: 10px;
+  color: #ededed;
+  margin-top: 90px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.row.tooltip::before {
+  left: 55%;
+  bottom: 30%;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
