@@ -164,7 +164,13 @@ for (i = 0; i < colors.length; i++) {
     };
   }
 }
-
+bag.onchange = () => {
+  if (bag.checked == false) {
+    bag_price = 0;
+  } else {
+    bag_price = +document.getElementById(bag.value).innerHTML;
+  }
+};
 // подсчеты
 function counting() {
   for (i = 0; i < size.length; i++) {
@@ -187,9 +193,9 @@ function counting() {
       etching_price = +document.getElementById(etching[i].value).innerHTML;
     }
   }
-  if (bag.checked) {
-    bag_price = +document.getElementById(bag.value).innerHTML;
-  }
+  // if (bag.checked) {
+  //   bag_price = +document.getElementById(bag.value).innerHTML;
+  // }
 
   total_price =
     size_price + leafs_price + color_price + etching_price + bag_price;
