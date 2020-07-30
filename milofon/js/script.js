@@ -119,6 +119,10 @@ for (i = 0; i < size.length; i++) {
         document.getElementById("leafs_shape").src =
           "../milofon/src/leaf-shape.svg";
         leafs_price = 0;
+        if (bag.checked) {
+          bag_price = 500;
+          counting();
+        }
         counting();
       };
       // цена от оформления
@@ -140,6 +144,10 @@ for (i = 0; i < size.length; i++) {
         color_price = 600;
         counting();
       };
+      if (bag.checked) {
+        bag_price = 600;
+        counting();
+      }
       counting();
     };
   }
@@ -167,8 +175,10 @@ for (i = 0; i < colors.length; i++) {
 bag.onchange = () => {
   if (bag.checked == false) {
     bag_price = 0;
+    counting();
   } else {
     bag_price = +document.getElementById(bag.value).innerHTML;
+    counting();
   }
 };
 // подсчеты
@@ -193,12 +203,13 @@ function counting() {
       etching_price = +document.getElementById(etching[i].value).innerHTML;
     }
   }
-  // if (bag.checked) {
-  //   bag_price = +document.getElementById(bag.value).innerHTML;
-  // }
+  if (bag.checked) {
+    bag_price = +document.getElementById(bag.value).innerHTML;
+  }
 
   total_price =
     size_price + leafs_price + color_price + etching_price + bag_price;
   document.getElementById("total_price").innerHTML = total_price;
+  document.getElementById("fixed").innerHTML = total_price;
   console.log("click");
 }
