@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 .header {
   background: url("../src/milo1.png") center;
   background-repeat: no-repeat;
@@ -25,10 +29,9 @@ body {
 .animated_a {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 38px;
+  font-size: 2rem;
   text-transform: uppercase;
-  margin: 30px;
+  margin: 3rem;
   text-decoration: none;
   color: #ededed;
   transition: all 0.4s;
@@ -89,18 +92,18 @@ body {
   top: 50%;
   z-index: 10;
   font-size: 0;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .slider .slick-arrow.slick-prev {
-  left: 15px;
+  left: 1.5rem;
   background: url("../src/prev.svg");
   border: none;
 }
 
 .slider .slick-arrow.slick-next {
-  right: 15px;
+  right: 1.5rem;
   background: url("../src/next.svg") no-repeat center center;
   border: none;
 }
@@ -121,8 +124,8 @@ body {
 
 .slider .slick-dots button {
   font-size: 0;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   background-color: #136161;
   border-radius: 100%;
   border: none;
@@ -131,8 +134,8 @@ body {
 .slider .slick-dots li.slick-active button {
   background-color: grey;
   border: 1px solid #fff;
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .slick-track {
@@ -144,7 +147,7 @@ body {
 }
 
 .slider_item {
-  margin-top: 10px;
+  margin-top: 1rem;
   min-width: 0;
   background: url("../src/5.jpg") no-repeat center;
   background-size: cover;
@@ -159,8 +162,7 @@ body {
 .feature {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 35px;
-  line-height: 38px;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: #deb534;
 }
@@ -168,7 +170,7 @@ body {
 .btn,
 .text {
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   color: #ededed;
 }
 
@@ -193,9 +195,9 @@ body {
 }
 
 .btn {
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,18 +261,17 @@ body {
   height: 50vh;
   background: url("../src/leafs.png") no-repeat;
   background-size: cover;
-  margin-top: 10px;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
 .our_goal h2 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 38px;
+  font-size: 2.5rem;
+  /* line-height: 38px; */
   text-transform: uppercase;
   color: #ededed;
 }
@@ -283,14 +284,15 @@ body {
   height: 100vh;
   background: url("../src/guys.jpg") no-repeat center;
   background-size: cover;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .service {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+
 }
 
 .row {
@@ -312,15 +314,14 @@ figure {
   border: 0.5px solid #ededed;
   box-shadow: 0px 4px 4px #070e2b;
   border-radius: 15px;
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
 }
 
 figure h4 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 23px;
-  line-height: 38px;
+  font-size: 2.3rem;
   text-transform: uppercase;
   color: #deb534;
   transition: 0.2s;
@@ -329,9 +330,9 @@ figure h4 {
 
 figure p {
   font-family: "Oswald", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #ededed;
-  max-width: 150px;
+  max-width: 15rem;
   transition: 0.2s;
   transform: translateY(-32px);
   opacity: 0;
@@ -385,7 +386,7 @@ figure:hover p {
 }
 
 .charity {
-  margin-top: 10px;
+  margin-top: 1rem;
   height: 50vh;
   background: url("../src/leafs.png") no-repeat;
   background-size: cover;
@@ -399,19 +400,15 @@ figure:hover p {
 .charity h2 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 35px;
-  line-height: 38px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #deb534;
-  margin-top: 10px;
-  /* align-self: flex-end;
-    
-    margin-right: 50px; */
+  margin-top: 1rem;
 }
 
 .charity p {
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #ededed;
   max-width: 60%;
   text-align: center;
@@ -429,7 +426,7 @@ figure:hover p {
 }
 
 .decor {
-  max-width: 400px;
+  max-width: 40rem;
   width: 50%;
   height: 90%;
   margin-top: 1%;
@@ -439,7 +436,7 @@ figure:hover p {
   background-size: contain;
   /* border-radius: 10px; */
   /* opacity: 0.7; */
-  padding: 50px;
+  padding: 5rem;
   /* transform: translateX(300px); */
   /* transform: translateY(100px); */
 }
@@ -447,7 +444,7 @@ figure:hover p {
 .decor h3 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: #ededed;
 }
@@ -458,16 +455,16 @@ button[type="submit"] {
   border-radius: 7px;
   outline: none;
   font-family: "Oswald", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #070e2b;
   width: 100%;
   display: block;
-  padding: 0 20px;
-  margin-bottom: 10px;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
 }
 
 button[type="submit"] {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .contacts {
@@ -477,24 +474,24 @@ button[type="submit"] {
 
 .cont {
   text-align: center;
-  padding: 40px;
+  padding: 4rem;
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: #deb534;
 }
 
 .columns {
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #ededed;
 }
 
 .columns p,
 .columns a {
   font-family: "Oswald", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -507,8 +504,8 @@ button[type="submit"] {
 .inst,
 .youtube {
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 2rem;
+  width: 2rem;
 }
 
 .inst {
@@ -527,14 +524,14 @@ button[type="submit"] {
 }
 
 footer img {
-  width: 10%;
-  height: 8%;
+  max-width: 10%;
+  max-height: 8%;
 }
 
 footer {
   margin-top: auto;
-  max-height: 150px;
-  padding-top: 30px;
+  max-height: 15rem;
+  padding-top: 3rem;
   background: #136161;
   display: flex;
   justify-content: space-around;
@@ -546,26 +543,18 @@ footer a {
 }
 
 .head {
-  max-height: 150px;
+  max-height: 15rem;
   display: flex;
   align-items: center;
 }
 
 .head img {
-  width: 15%;
-  height: 10%;
-  padding: 10px;
-  margin: 10px;
+  max-width: 15%;
+  max-height: 10%;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.home {
-  display: inline-block;
-  background: url("../src/home1.svg") no-repeat;
-  background-size: contain;
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-}
 
 .first-screen {
   height: 110vh;
@@ -574,11 +563,11 @@ footer a {
 }
 
 .h1 {
-  margin-top: -40px;
+  margin-top: -4rem;
   text-align: center;
   font-family: "Amatic SC", cursive, sans-serif;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #deb534;
 }
@@ -586,13 +575,13 @@ footer a {
 .cards {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .card-item {
-  width: 20%;
+  max-width: 20%;
   max-height: 35%;
-  padding: 1.5%;
+  padding: 1rem;
   text-align: left;
   background: #ededed;
   opacity: 0.75;
@@ -608,7 +597,7 @@ footer a {
 
 .card-item h3 {
   font-family: "Amatic SC", cursive, sans-serif;
-  font-size: 150%;
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: #136161;
 }
@@ -616,23 +605,24 @@ footer a {
 .card-item p {
   font-family: "Oswald", sans-serif;
   color: #070e2b;
+  font-size: 1.5rem
 }
 
 .card-item img {
-  width: 25%;
-  height: 20%;
+  max-width: 5rem;
+  max-height: 5rem;
 }
 
 .constructor {
-  margin-top: 10px;
-  height: 380vh;
+  margin-top: 1rem;
+  /* height: 380vh; */
   /* background: url("../src/Group3.png") no-repeat top;
   background-size: contain; */
 }
 
 .constructor h2 {
   font-family: "Amatic SC", cursive, sans-serif;
-  font-size: 170%;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #070e2b;
   text-align: center;
@@ -640,7 +630,7 @@ footer a {
 
 .constructor h3 {
   font-family: "Amatic SC", cursive, sans-serif;
-  font-size: 150%;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #136161;
   text-align: center;
@@ -648,14 +638,14 @@ footer a {
 
 .constructor a {
   box-shadow: none;
-  height: 4%;
+  height: 3rem;
 }
 
 .constructor .gl_pic {
   display: block;
-  width: 14%;
-  height: 14%;
-  margin: 2%;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
   opacity: 0.7;
 }
 
@@ -665,8 +655,8 @@ footer a {
 }
 
 #big {
-  width: 20%;
-  height: 20%;
+  width: 15rem;
+  height: 15rem;
 }
 
 .constuctor-item {
@@ -675,7 +665,7 @@ footer a {
   align-content: center;
   align-items: center;
   font-family: "Oswald", sans-serif;
-  font-size: 120%;
+  font-size: 1.5rem;
   color: #070e2b;
 }
 
@@ -688,13 +678,19 @@ footer a {
 }
 
 .line {
-  height: 0.5%;
-  margin-top: 3%;
+  height: 1rem;
+  margin-top: 3rem;
   background-color: #136161;
 }
 
 .color {
   flex-direction: column;
+  display: block;
+}
+
+.row-color {
+  display: flex;
+  justify-content: space-around;
 }
 
 .fin_price {
@@ -702,13 +698,13 @@ footer a {
   background-size: cover;
   display: flex;
   align-items: flex-end;
-  padding: 3%;
+  padding: 3rem;
 }
 
 .order_form {
   transform: none;
-  width: 40%;
-  height: 80%;
+  max-width: 40%;
+  max-height: 80%;
   background: #ededed;
   opacity: 0.8;
   border-radius: 10%;
@@ -717,7 +713,7 @@ footer a {
 
 .price p {
   font-family: "Amatic SC", cursive, sans-serif;
-  font-size: 150%;
+  font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #deb534;
@@ -726,7 +722,7 @@ footer a {
 
 #price_comment {
   font-family: "Oswald", sans-serif;
-  font-size: 80%;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #ededed;
 }
@@ -752,9 +748,9 @@ footer a {
   border-radius: 10px;
   background: #136161;
   opacity: 0.8;
-  padding: 10px;
+  padding: 1rem;
   color: #ededed;
-  margin-top: 90px;
+  margin-top: 9rem;
   opacity: 0;
   transition: 0.5s;
 }
@@ -775,8 +771,8 @@ footer a {
   top: 50%;
   background: #136161;
   border-radius: 100%;
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   color: #ededed;
   font-family: "Oswald", sans-serif;
   display: flex;
@@ -785,4 +781,15 @@ footer a {
   justify-content: center;
   z-index: 99;
   opacity: 0.8;
+}
+
+.dev {
+  color: #ededed;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+}
+
+.dev_a {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
