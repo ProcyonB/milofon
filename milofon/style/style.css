@@ -149,7 +149,7 @@ html {
 .slider_item {
   margin-top: 1rem;
   min-width: 0;
-  background: url("../src/5.jpg") no-repeat center;
+  /* background: url("../src/5.jpg") no-repeat center; */
   background-size: cover;
   height: 100vh;
   display: flex !important;
@@ -383,6 +383,68 @@ figure:hover p {
 
 figure:hover p {
   transform: translateY(-10px);
+}
+
+.more {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: #deb534;
+  text-decoration: none;
+
+}
+
+figure:hover {
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup img {
+  max-width: 90%;
+}
+
+.popup_window {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  text-align: center;
+  padding: 3rem;
+  background-color: #ededed;
+  border-radius: 10px;
+  font-family: "Oswald", sans-serif;
+  color: #070e2b;
+  font-size: 1.8rem;
+  height: 48rem;
+  width: 45rem;
+
+
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  color: #070e2b;
+  font-size: 3rem;
+}
+
+.close:hover {
+  cursor: pointer;
 }
 
 .charity {
