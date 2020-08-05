@@ -259,7 +259,7 @@ html {
 
 .our_goal {
   height: 50vh;
-  background: url("../src/leafs.png") no-repeat;
+  background: url("../src/grass.png") no-repeat;
   background-size: cover;
   margin-top: 1rem;
   display: flex;
@@ -388,7 +388,7 @@ figure:hover p {
 .charity {
   margin-top: 1rem;
   height: 50vh;
-  background: url("../src/leafs.png") no-repeat;
+  background: url("../src/grass.png") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -558,8 +558,8 @@ footer a {
 
 
 .first-screen {
-  height: 110vh;
-  background: url("../src/leafs.png") no-repeat center;
+  height: 90vh;
+  background: url("../src/drops.png") no-repeat center;
   background-size: cover;
 }
 
@@ -577,10 +577,11 @@ footer a {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  /* margin-bottom: 4rem; */
 }
 
 .card-item {
-  max-width: 20%;
+  max-width: 30%;
   max-height: 35%;
   padding: 1rem;
   text-align: left;
@@ -695,7 +696,7 @@ footer a {
 }
 
 .fin_price {
-  background: url('../src/leafs.png') no-repeat center;
+  background: url('../src/drops.png') no-repeat center;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -704,7 +705,7 @@ footer a {
 
 .order_form {
   transform: none;
-  max-width: 40%;
+  max-width: 70%;
   max-height: 80%;
   background: #ededed;
   opacity: 0.8;
@@ -769,13 +770,15 @@ footer a {
 .fixed_price {
   position: fixed;
   right: 5%;
-  top: 50%;
+  top: 80%;
   background: #136161;
   border-radius: 100%;
   height: 10rem;
   width: 10rem;
   color: #ededed;
   font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
   display: flex;
   text-align: center;
   align-items: center;
