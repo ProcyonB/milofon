@@ -102,7 +102,7 @@
           <p><strong><span id='10 лепестков'>400</span>  р</strong></p>
         </div>
       </div>
-      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
+      <div class="row count_leafs_examples" style="justify-content: center;"><a  href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       <div class="line"></div>
 
       <!-- shape of leafs -->
@@ -117,7 +117,7 @@
           >
           <p><strong>0 р</strong></p>
         </div>
-        <div class="img_radio tooltip" data-title="Форма недоступна при выборе: 22 см + 10 лепестков">
+        <div class="img_radio with_tooltip" data-title="Форма недоступна при выборе: 22 см + 10 лепестков">
           <img class="gl_pic" id="leafs_shape" src="../milofon/src/leaf-shape.svg" alt="" />
           <label for="leafs"
             ><input type="radio" name="shape" id="leafs" value="leafs" />Листочки</label
@@ -132,7 +132,7 @@
           <p><strong>0 р</strong></p>
         </div>
       </div>
-      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
+      <div class="row shape_leafs_examples" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       <div class="line"></div>
       <!-- color -->
       <h3>Оформление</h3>
@@ -161,10 +161,10 @@
             <p><strong><span id="обжиг">800</span> р</strong></p>
           </div>
       </div>
-      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
-      <h3 style="font-size: 100%;">Гравировка ручной работы
+      <div class="row coloration_examples" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
+      <h3>Гравировка ручной работы
         (только на обжиге)</h3>
-        <div class='row-color tooltip' data-title="Возможна только при выборе обжига">
+        <div class='row-color color_tooltip' data-title="Возможна только при выборе обжига">
         <div class="img_radio">
           <img class="gl_pic" src="../milofon/src/size.svg" alt="" />
           <label for="3x3"
@@ -184,7 +184,7 @@
           <p><strong><span id="гравировка:12x12">1800</span> р</strong></p>
         </div>
       </div>
-      <div class="row" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
+      <div class="row etching_examples" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       </div>
       <div class="line"></div>
 
@@ -250,11 +250,50 @@
       >
     </p>
   </footer>
-  <link rel="stylesheet" href="../milofon/style/animate.css" />
+  <!-- всплывающие окна с примерами работ -->
+  <div class="popup count_leafs_examples__popup">
+    <div class="popup_window pic_slider">
+      <button class="close">&times;</button>
+      <div class="slider examples_slider">
+              <img src="../milofon/src/fern.jpg" alt="" />
+              <img src="../milofon/src/grass.png" alt="" />
+      </div>
+    </div>
+  </div>
 
+  <div class="popup shape_leafs_examples__popup">
+    <div class="popup_window pic_slider">
+      <button class="close">&times;</button>
+      <div class="slider examples_slider">
+              <img src="../milofon/src/ksen.jpg" alt="" />
+              <img src="../milofon/src/leafs.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="popup coloration_examples__popup">
+    <div class="popup_window pic_slider">
+      <button class="close">&times;</button>
+      <div class="slider examples_slider">
+              <img src="../milofon/src/ksen.jpg" alt="" />
+              <img src="../milofon/src/leafs.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="popup etching_examples__popup">
+    <div class="popup_window pic_slider">
+      <button class="close">&times;</button>
+      <div class="slider examples_slider">
+              <img src="../milofon/src/fern.jpg" alt="" />
+              <img src="../milofon/src/grass.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="../milofon/style/animate.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="../milofon/js/rellax.min.js"></script> -->
-  <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> --> 
+  <script type="text/javascript" src="../milofon/slick/slick.min.js"></script>
   <script src="../milofon/js/wow.min.js"></script>
   <script src="../milofon/js/script_ie.js"></script>
   <script type="text/javascript" src="../milofon/js/script.js"></script>

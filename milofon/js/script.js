@@ -36,6 +36,40 @@ $(document).ready(function () {
     $(".activities_popup").fadeOut();
   });
 
+  // модельные окна с примерами работ
+  $(".count_leafs_examples").on("click", function (e) {
+    e.preventDefault();
+    $(".count_leafs_examples__popup").fadeIn();
+  });
+  $(".close").click(function (e) {
+    e.preventDefault();
+    $(".count_leafs_examples__popup").fadeOut();
+  });
+  $(".shape_leafs_examples").on("click", function (e) {
+    e.preventDefault();
+    $(".shape_leafs_examples__popup").fadeIn();
+  });
+  $(".close").click(function (e) {
+    e.preventDefault();
+    $(".shape_leafs_examples__popup").fadeOut();
+  });
+  $(".coloration_examples").on("click", function (e) {
+    e.preventDefault();
+    $(".coloration_examples__popup").fadeIn();
+  });
+  $(".close").click(function (e) {
+    e.preventDefault();
+    $(".coloration_examples__popup").fadeOut();
+  });
+  $(".etching_examples").on("click", function (e) {
+    e.preventDefault();
+    $(".etching_examples__popup").fadeIn();
+  });
+  $(".close").click(function (e) {
+    e.preventDefault();
+    $(".etching_examples__popup").fadeOut();
+  });
+
   // слайдер
   $(".slider").slick({
     dots: true,
@@ -94,6 +128,7 @@ for (i = 0; i < size.length; i++) {
         document.getElementById("geometry_shape").src =
           "../milofon/src/geometry_10.svg";
         leafs_shape.disabled = "disabled";
+        $(".with_tooltip").toggleClass("tooltip");
         leafs_price = 400;
         counting();
       };
@@ -105,6 +140,7 @@ for (i = 0; i < size.length; i++) {
         document.getElementById("leafs_shape").src =
           "../milofon/src/leaf-shape.svg";
         leafs_shape.disabled = "";
+        $(".with_tooltip").toggleClass("tooltip");
         leafs_price = 0;
         counting();
       };
@@ -113,6 +149,7 @@ for (i = 0; i < size.length; i++) {
         for (i = 0; i < etching.length; i++) {
           etching[i].disabled = "disabled";
           etching[i].checked = false;
+          $(".color_tooltip").addClass("tooltip");
           etching_price = 0;
         }
         color_price = 0;
@@ -122,6 +159,8 @@ for (i = 0; i < size.length; i++) {
         for (i = 0; i < etching.length; i++) {
           etching[i].disabled = "disabled";
           etching[i].checked = false;
+          $(".color_tooltip").addClass("tooltip");
+
           etching_price = 0;
         }
         color_price = 400;
@@ -165,6 +204,7 @@ for (i = 0; i < size.length; i++) {
         for (i = 0; i < etching.length; i++) {
           etching[i].disabled = "disabled";
           etching[i].checked = false;
+          $(".color_tooltip").addClass("tooltip");
           etching_price = 0;
         }
         color_price = 0;
@@ -174,6 +214,7 @@ for (i = 0; i < size.length; i++) {
         for (i = 0; i < etching.length; i++) {
           etching[i].disabled = "disabled";
           etching[i].checked = false;
+          $(".color_tooltip").addClass("tooltip");
           etching_price = 0;
         }
         color_price = 600;
@@ -195,6 +236,8 @@ for (i = 0; i < colors.length; i++) {
       for (i = 0; i < etching.length; i++) {
         etching[i].disabled = "disabled";
         etching[i].checked = false;
+        $(".color_tooltip").addClass("tooltip");
+
         etching_price = 0;
       }
       counting();
@@ -203,6 +246,7 @@ for (i = 0; i < colors.length; i++) {
     colors[i].onchange = function () {
       for (i = 0; i < etching.length; i++) {
         etching[i].disabled = "";
+        $(".color_tooltip").removeClass("tooltip");
       }
     };
   }

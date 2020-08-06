@@ -149,7 +149,6 @@ html {
 .slider_item {
   margin-top: 1rem;
   min-width: 0;
-  /* background: url("../src/5.jpg") no-repeat center; */
   background-size: cover;
   height: 100vh;
   display: flex !important;
@@ -427,8 +426,28 @@ figure:hover {
   font-size: 1.8rem;
   height: 48rem;
   width: 45rem;
+}
 
+.pic_slider {
+  width: 60rem;
+  height: 45rem;
+}
 
+.pic_slider img {
+  width: 50rem;
+  height: 40rem;
+}
+
+.examples_slider .slick-dots {
+  visibility: hidden;
+}
+
+.examples_slider .slick-arrow.slick-prev {
+  left: -1.2rem;
+}
+
+.examples_slider .slick-arrow.slick-next {
+  right: -1.2rem;
 }
 
 .close {
