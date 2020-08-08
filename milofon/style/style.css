@@ -4,8 +4,6 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-
-
 }
 
 body {
@@ -291,7 +289,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .row {
@@ -389,7 +386,6 @@ figure:hover p {
   font-size: 1.5rem;
   color: #deb534;
   text-decoration: none;
-
 }
 
 figure:hover {
@@ -637,7 +633,6 @@ footer a {
   margin: 1rem;
 }
 
-
 .first-screen {
   height: 90vh;
   background: url("../src/drops.png") no-repeat center;
@@ -688,12 +683,44 @@ footer a {
 .card-item p {
   font-family: "Oswald", sans-serif;
   color: #070e2b;
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 .card-item img {
   max-width: 5rem;
   max-height: 5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+input[type="radio"] + .radio_label:before,
+input[type="checkbox"] + .checkbox_label:before {
+  content: "\2714";
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #136161;
+  /* font-size: 2rem; */
+  line-height: 1.5rem;
+  margin: -5px 5px 0 0;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0;
+  transition: font-size ease 0.3s;
+  color: #136161;
+}
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + .checkbox_label:before {
+  font-size: 1.5rem;
+}
+input[type="radio"]:disabled + label:before {
+  border-color: #ededed;
 }
 
 .constructor {
@@ -731,7 +758,6 @@ footer a {
   margin: 2rem;
   opacity: 0.7;
 }
-
 
 .constructor img:hover {
   opacity: 1;
@@ -777,7 +803,7 @@ footer a {
 }
 
 .fin_price {
-  background: url('../src/drops.png') no-repeat center;
+  background: url("../src/drops.png") no-repeat center;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -821,7 +847,6 @@ footer a {
 
 .tooltip {
   position: relative;
-
 }
 
 .tooltip::before {
