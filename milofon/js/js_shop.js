@@ -7,8 +7,6 @@
 //   }
 // });
 
-total_price = 0;
-
 // зависимости от размера
 size = document.getElementsByName("size");
 colors = document.getElementsByName("color");
@@ -22,6 +20,7 @@ cosm_price = document.getElementById("космос");
 burning_price = document.getElementById("обжиг");
 bag_price = 0;
 
+total_price = 0;
 size_price = 0;
 leafs_price = 0;
 color_price = 0;
@@ -209,3 +208,9 @@ function counting() {
   document.getElementById("fixed").innerHTML = total_price;
   console.log("click");
 }
+$(".remove").on("click", function () {
+  for (i = 0; i < etching.length; i++) {
+    etching[i].checked = false;
+    etching_price = 0;
+  }
+});

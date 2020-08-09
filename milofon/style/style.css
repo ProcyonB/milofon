@@ -698,8 +698,9 @@ input[type="checkbox"] {
   height: 1px;
   opacity: 0;
 }
-input[type="radio"] + .radio_label:before,
-input[type="checkbox"] + .checkbox_label:before {
+
+input[type="radio"]+.radio_label:before,
+input[type="checkbox"]+.checkbox_label:before {
   content: "\2714";
   border-radius: 50%;
   display: inline-block;
@@ -715,11 +716,13 @@ input[type="checkbox"] + .checkbox_label:before {
   transition: font-size ease 0.3s;
   color: #136161;
 }
-input[type="radio"]:checked + label:before,
-input[type="checkbox"]:checked + .checkbox_label:before {
+
+input[type="radio"]:checked+label:before,
+input[type="checkbox"]:checked+.checkbox_label:before {
   font-size: 1.5rem;
 }
-input[type="radio"]:disabled + label:before {
+
+input[type="radio"]:disabled+label:before {
   border-color: #ededed;
 }
 
@@ -772,7 +775,7 @@ input[type="radio"]:disabled + label:before {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  align-items: center;
+  align-items: baseline;
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   color: #070e2b;
@@ -902,4 +905,22 @@ input[type="radio"]:disabled + label:before {
 .dev_a {
   font-size: 1.5rem;
   margin-left: 0.5rem;
+}
+
+.remove_div {
+  text-align: center;
+}
+
+.remove {
+  height: 3rem;
+  width: 30rem;
+  border: 1px solid #be4e03;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  color: #070e2b;
+  margin-top: 1rem;
+}
+
+.remove:hover {
+  cursor: pointer;
 }

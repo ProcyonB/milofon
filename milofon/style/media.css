@@ -103,6 +103,10 @@
     .first-screen {
         height: 60vh;
     }
+
+    .remove {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 412px) {
