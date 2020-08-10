@@ -40,21 +40,22 @@ for (i = 0; i < size.length; i++) {
       document.getElementById("сумка").innerHTML = 500;
       leafs_count.onchange = function () {
         document.getElementById("rectangle_shape").src =
-          "../milofon/src/rectangle_10.svg";
+          "/static/milo_webpage/src/rectangle_10.svg";
         document.getElementById("geometry_shape").src =
-          "../milofon/src/geometry_10.svg";
+          "/static/milo_webpage/src/geometry_10.svg";
         leafs_shape.disabled = "disabled";
         $(".with_tooltip").toggleClass("tooltip");
         leafs_price = 400;
         counting();
       };
+
       min_leafs_count.onchange = function () {
         document.getElementById("rectangle_shape").src =
-          "../milofon/src/rect-shape.svg";
+          "/static/milo_webpage/src/rect-shape.svg";
         document.getElementById("geometry_shape").src =
-          "../milofon/src/geometry-shape.svg";
+          "/static/milo_webpage/src/geometry-shape.svg";
         document.getElementById("leafs_shape").src =
-          "../milofon/src/leaf-shape.svg";
+          "/static/milo_webpage/src/leaf-shape.svg";
         leafs_shape.disabled = "";
         $(".with_tooltip").toggleClass("tooltip");
         leafs_price = 0;
@@ -93,21 +94,21 @@ for (i = 0; i < size.length; i++) {
       // цена от листьев+зависимости
       leafs_count.onchange = function () {
         document.getElementById("rectangle_shape").src =
-          "../milofon/src/rectangle_10.svg";
+          "/static/milo_webpage/src/rectangle_10.svg";
         document.getElementById("geometry_shape").src =
-          "../milofon/src/geometry_10.svg";
+          "/static/milo_webpage/src/geometry_10.svg";
         document.getElementById("leafs_shape").src =
-          "../milofon/src/leafs_10.svg";
+          "/static/milo_webpage/src/leafs_10.svg";
         leafs_price = 400;
         counting();
       };
       min_leafs_count.onchange = function () {
         document.getElementById("rectangle_shape").src =
-          "../milofon/src/rect-shape.svg";
+          "/static/milo_webpage/src/rect-shape.svg";
         document.getElementById("geometry_shape").src =
-          "../milofon/src/geometry-shape.svg";
+          "/static/milo_webpage/src/geometry-shape.svg";
         document.getElementById("leafs_shape").src =
-          "../milofon/src/leaf-shape.svg";
+          "/static/milo_webpage/src/leaf-shape.svg";
         leafs_price = 0;
         if (bag.checked) {
           bag_price = 500;

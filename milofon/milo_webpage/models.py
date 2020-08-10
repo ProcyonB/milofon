@@ -4,4 +4,4 @@ from django.db import models
 
 
 class Leafs_Shape(models.Model):
-    examples_of_shape = models.ImageField(upload_to='media/images')
+    examples_of_shape = models.ImageField(upload_to='images')
