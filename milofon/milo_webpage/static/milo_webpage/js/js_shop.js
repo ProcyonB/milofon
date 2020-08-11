@@ -44,6 +44,7 @@ for (i = 0; i < size.length; i++) {
         document.getElementById("geometry_shape").src =
           "/static/milo_webpage/src/geometry_10.svg";
         leafs_shape.disabled = "disabled";
+        leafs_shape.checked = false;
         $(".with_tooltip").toggleClass("tooltip");
         leafs_price = 400;
         counting();

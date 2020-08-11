@@ -147,21 +147,21 @@
       <div class="constuctor-item color wow fadeInDown">
         <div class=' row-color'>
           <div class="img_radio">
-            <img class="gl_pic" src="{% static '/milo_webpage/src/size.svg' %}" alt="" />
+            <img class="gl_pic" src="{% static '/milo_webpage/src/color.png' %}" alt="" />
             <input type="radio" name="color" id="coloration" value="окрашивание в один цвет"/>
             <label class='radio_label' for="coloration"
               >Окрашивание в один цвет</label>
             <p><strong><span id="окрашивание в один цвет"></span> 0 р</strong></p>
           </div>
           <div class="img_radio">
-            <img class="gl_pic" src="{% static '/milo_webpage/src/size.svg' %}" alt="" />
+            <img class="gl_pic" src="{% static '/milo_webpage/src/kosmos.png' %}" alt="" />
             <input type="radio" name="color" id="cosmos" value="космос" />
             <label class='radio_label' for="cosmos"
               >"Космос"</label>
             <p><strong><span id='космос'>600</span>  p</strong></p>
           </div>
           <div class="img_radio">
-            <img class="gl_pic" src="{% static '/milo_webpage/src/милофон1.webp' %}" alt="" />
+            <img class="gl_pic" src="{% static '/milo_webpage/src/burning.png' %}" alt="" />
             <input type="radio" name="color" id="burning" value="обжиг"/>
             <label class='radio_label' for="burning"
               >Обжиг + лак</label>
@@ -270,10 +270,8 @@
     <div class="popup_window pic_slider">
       <button class="close">&times;</button>
       <div class="slider examples_slider">
-              <!-- <img src="{% static '/milo_webpage/src/fern.jpg' %}" alt="" />
-              <img src="{% static '/milo_webpage/src/grass.png' %}" alt="" /> -->
-              {% for shape in shapes %}
-              <img src="{{ shape.examples_of_shape.url }}" alt="">
+              {% for count in counts %}
+              <img src="{{ count.leafs_count_examples.url }}" alt="">
               {% endfor %}
       </div>
     </div>
@@ -283,8 +281,10 @@
     <div class="popup_window pic_slider">
       <button class="close">&times;</button>
       <div class="slider examples_slider">
-              <img src="{% static '/milo_webpage/src/ksen.jpg' %}" alt="" />
-              <img src="{% static '/milo_webpage/src/leafs.jpg' %}" alt="" />
+              {% for shape in shapes %}
+              <img src="{{ shape.examples_of_shape.url }}" alt="">
+              {% endfor %}
+
       </div>
     </div>
   </div>
@@ -293,8 +293,9 @@
     <div class="popup_window pic_slider">
       <button class="close">&times;</button>
       <div class="slider examples_slider">
-              <img src="{% static '/milo_webpage/src/ksen.jpg' %}" alt="" />
-              <img src="{% static '/milo_webpage/src/leafs.jpg' %}" alt="" />
+              {% for color in colors %}
+              <img src="{{ color.colorations_examples.url }}" alt="">
+              {% endfor %}
       </div>
     </div>
   </div>
@@ -303,8 +304,9 @@
     <div class="popup_window pic_slider">
       <button class="close">&times;</button>
       <div class="slider examples_slider">
-              <img src="{% static '/milo_webpage/src/fern.jpg' %}" alt="" />
-              <img src="{% static '/milo_webpage/src/grass.png' %}" alt="" />
+              {% for etchings in etchings %}
+              <img src="{{ etchings.etchings_examples.url }}" alt="">
+              {% endfor %}
       </div>
     </div>
   </div>

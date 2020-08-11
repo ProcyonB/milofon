@@ -446,6 +446,8 @@ figure:hover {
   right: -1.2rem;
 }
 
+.examples_slider img {}
+
 .close {
   position: absolute;
   top: 0;
@@ -717,6 +719,11 @@ input[type="checkbox"]+.checkbox_label:before {
   color: #136161;
 }
 
+.radio_label:hover,
+.checkbox_label:hover {
+  cursor: pointer;
+}
+
 input[type="radio"]:checked+label:before,
 input[type="checkbox"]:checked+.checkbox_label:before {
   font-size: 1.5rem;
@@ -759,7 +766,7 @@ input[type="radio"]:disabled+label:before {
   width: 10rem;
   height: 10rem;
   margin: 2rem;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .constructor img:hover {
