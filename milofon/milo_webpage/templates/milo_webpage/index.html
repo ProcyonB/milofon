@@ -177,10 +177,12 @@
     </section>
     <!-- обратная связь -->
     <section class="contact">
-      <form class="decor wow fadeInRight" offset="50">
+      <form class="decor wow fadeInRight" offset="50" action="" method="POST">
+        {% csrf_token %}
         <h3>Напишите нам</h3>
         <input
           class="contact_form"
+          id="input_name"
           type="text"
           placeholder="Ваше имя"
           name="name"
@@ -188,18 +190,14 @@
         />
         <input
           class="contact_form"
+          id="input_email"
           type="email"
           placeholder="Email"
           name="email"
           required
         />
-        <textarea
-          placeholder="Сообщение..."
-          name="comment"
-          rows="7"
-          required
-        ></textarea>
-        <button class="btn" type="submit">Написать</button>
+        <textarea placeholder="Сообщение..." name="comment" rows="7"></textarea>
+        <button id="first_form" class="btn" type="submit">Написать</button>
       </form>
     </section>
     <!-- контакты -->
@@ -345,9 +343,14 @@
       type="text/javascript"
       src="https://spikmi.com/Widget?Id=3948"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script
       type="text/javascript"
       src="{% static '/milo_webpage/js/script.js'%}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static '/milo_webpage/js/form.js'%}"
     ></script>
   </body>
 </html>

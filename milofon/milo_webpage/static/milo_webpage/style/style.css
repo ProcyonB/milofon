@@ -425,8 +425,8 @@ figure:hover {
 }
 
 .pic_slider {
-  width: 60rem;
-  height: 45rem;
+  width: 65rem;
+  height: 50rem;
 }
 
 .pic_slider img {
@@ -445,8 +445,6 @@ figure:hover {
 .examples_slider .slick-arrow.slick-next {
   right: -1.2rem;
 }
-
-.examples_slider img {}
 
 .close {
   position: absolute;
@@ -813,7 +811,7 @@ input[type="radio"]:disabled+label:before {
 }
 
 .fin_price {
-  background: url("../src/drops.png") no-repeat center;
+  background: url("../src/grass.png") no-repeat center;
   background-size: cover;
   display: flex;
   align-items: flex-end;

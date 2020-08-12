@@ -6,7 +6,29 @@ from .models import *
 
 
 def index(request):
-    return render(request, 'milo_webpage/index.html')
+    if request == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
+        print(name, email, message)
+        return HttpResponse('ok')
+    else:
+        return render(request, 'milo_webpage/index.html')
+
+
+def form_funс(request):
+    if request.method == 'POST':
+        print('here')
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        print(name, email, message)
+        if True:
+            return HttpResponse('no')
+        else:
+            return HttpResponse('yep')
+    else:
+        return HttpResponse('не ok')
 
 
 def create(request):
