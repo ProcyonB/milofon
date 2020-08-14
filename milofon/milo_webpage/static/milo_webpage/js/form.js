@@ -45,7 +45,7 @@ $("#second_form_btn").on("click", function (e) {
   drum_size = "";
   drum_leafs_count = "";
   drum_color = "";
-  drum_etching = "";
+  drum_etching = "Нет";
   drum_bag = "";
   drum_sticks = "";
   drum_shape = "";
@@ -57,6 +57,11 @@ $("#second_form_btn").on("click", function (e) {
   etching = document.getElementsByName("etching");
   bag = document.getElementById("bag");
   sticks = document.getElementById("sticks");
+  // checked_size = "";
+  // checked_color = "";
+  // checked_count_of_leaf = "";
+  // checked_etching = "";
+  // checked_shape = "";
   total_price = 0;
   size_price = 0;
   leafs_price = 0;
@@ -67,23 +72,27 @@ $("#second_form_btn").on("click", function (e) {
   for (i = 0; i < size.length; i++) {
     if (size[i].checked) {
       drum_size = size[i].value;
+      // checked_size = +i;
       size_price = +document.getElementById(size[i].value).innerHTML;
     }
   }
   for (i = 0; i < count_of_leafs.length; i++) {
     if (count_of_leafs[i].checked) {
       drum_leafs_count = count_of_leafs[i].value;
+      // checked_count_of_leaf = +i;
       leafs_price = +document.getElementById(count_of_leafs[i].value).innerHTML;
     }
   }
   for (i = 0; i < shape.length; i++) {
     if (shape[i].checked) {
       drum_shape = shape[i].value;
+      // checked_shape = +i;
     }
   }
   for (i = 0; i < colors.length; i++) {
     if (colors[i].checked) {
       drum_color = colors[i].value;
+      // checked_color = +i;
       color_price = +document.getElementById(colors[i].value).innerHTML;
     }
   }
@@ -91,9 +100,8 @@ $("#second_form_btn").on("click", function (e) {
   for (i = 0; i < etching.length; i++) {
     if (etching[i].checked) {
       drum_etching = etching[i].value;
+      // checked_etching = +i;
       etching_price = +document.getElementById(etching[i].value).innerHTML;
-    } else {
-      drum_etching = "Нет";
     }
   }
   if (bag.checked) {
@@ -142,7 +150,16 @@ $("#second_form_btn").on("click", function (e) {
       $("input[name=phone]").val("");
       $("input[name=social]").val("");
       $("textarea[name=comment]").val("");
-      alert("данные отправлены");
+      // size[checked_size].checked = false;
+      // colors[checked_color].checked = false;
+      // count_of_leafs[checked_count_of_leaf].checked = false;
+      // shape[checked_shape].checked = false;
+      // etching[checked_etching].checked = false;
+      // bag.checked = false;
+      // sticks.checked = false;
+      // document.getElementById("total_price").innerHTML = 0;
+      // document.getElementById("fixed").innerHTML = 0;
+      alert("данные отправлены  ");
     },
     error: function (result) {
       alert("Произошла ошибка. Попробуйте позже.");

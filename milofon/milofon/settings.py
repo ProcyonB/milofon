@@ -118,10 +118,11 @@ USE_TZ = True
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'milofon.work@gmail.com'
-EMAIL_HOST_PASSWORD = "*"
+EMAIL_HOST_PASSWORD = "fmchrzktcgskifpq"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'milofon.work@gmail.com'
+Authentication = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
