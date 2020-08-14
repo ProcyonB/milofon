@@ -67,7 +67,9 @@
         </div>
       </div>
     </section>
-    <form action="" method="post"><section class="constructor" >
+    <form action="" method="post">
+      {% csrf_token %}
+      <section class="constructor" >
       <h2>собрать глюкофон</h2>
 
       <!-- size -->
@@ -120,21 +122,21 @@
       <div class="constuctor-item wow fadeInDown">
         <div class="img_radio">
           <img class="gl_pic" id="rectangle_shape" src="{% static '/milo_webpage/src/rect-shape.svg' %}" alt="" />
-          <input type="radio" name="shape" id="rect" value="rectangle" />
+          <input type="radio" name="shape" id="rect" value="Квадратная" />
           <label class='radio_label' for="rect"
             >Квадратная</label>
           <p><strong>0 р</strong></p>
         </div>
         <div class="img_radio with_tooltip" data-title="Форма недоступна при выборе: 22 см + 10 лепестков">
           <img class="gl_pic" id="leafs_shape" src="{% static '/milo_webpage/src/leaf-shape.svg' %}" alt="" />
-          <input type="radio" name="shape" id="leafs" value="leafs" />
+          <input type="radio" name="shape" id="leafs" value="Листочки" />
           <label class='radio_label' for="leafs"
             >Листочки</label>
           <p><strong>0 р</strong></p>
         </div>
         <div class="img_radio">
           <img class="gl_pic" id="geometry_shape" src="{% static '/milo_webpage/src/geometry-shape.svg' %}" alt="" />
-          <input type="radio" name="shape" id="geometry" value="geometry" />
+          <input type="radio" name="shape" id="geometry" value="Геометрия" />
           <label class='radio_label' for="geometry"
             >Геометрия</label>
           <p><strong>0 р</strong></p>
@@ -232,7 +234,7 @@
         <input class="contact_form" type="tel" name="phone" id="" placeholder="+7(999)999-99-99" required>
         <input class="contact_form" type="url" name="social" id="" placeholder="Ссылка на аккаунт ВК (по желанию)">
         <textarea placeholder="Комментарий к заказу (предпочтительный способ связи, вопросы, пожелания...)" name='comment' rows="7" ></textarea>
-        <button class="btn" type="submit">Заказать</button>
+        <button id='second_form_btn' class="btn" type="submit">Заказать</button>
       </div>
       <div class="price">
         <p>Итого: <span id="total_price">0</span>  р</p>
@@ -321,6 +323,10 @@
   <script src="{% static '/milo_webpage/js/script_ie.js' %}"></script>
   <script type="text/javascript" src="{% static '/milo_webpage/js/script.js' %}"></script>
   <script src="{% static '/milo_webpage/js/js_shop.js' %}"></script>
+  <script
+      type="text/javascript"
+      src="{% static '/milo_webpage/js/form.js'%}"
+    ></script>
 
 
   </body>

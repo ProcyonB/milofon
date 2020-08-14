@@ -419,7 +419,7 @@ figure:hover {
   border-radius: 10px;
   font-family: "Oswald", sans-serif;
   color: #070e2b;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   height: 48rem;
   width: 45rem;
 }
@@ -863,7 +863,8 @@ input[type="radio"]:disabled+label:before {
   display: block;
   border-radius: 10px;
   background: #136161;
-  opacity: 0.8;
+  opacity: 0.9;
+  z-index: 5;
   padding: 1rem;
   color: #ededed;
   margin-top: 9rem;
