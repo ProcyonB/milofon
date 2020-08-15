@@ -1,9 +1,37 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сообщение с сайта</title>
+    <style type="text/css">
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px dotted;
+        text-align: right;
+      }
+
+      td,
+      th {
+        padding: 5px;
+        width: 20px;
+        height: 35px;
+      }
+
+      th {
+        background-color: transparent;
+      }
+    </style>
+    <title>Заказ с сайта</title>
   </head>
   <body>
     <h2 style="font-family: 'Arial', sans-serif; color: #070e2b;">
@@ -41,81 +69,40 @@
     <h2 style="font-family: 'Arial', sans-serif; color: #070e2b;">
       Детали заказа
     </h2>
-    <!-- <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Размер</b>: {{drum__size}} - {{size__price}}р
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Количество лепестков</b>: {{drum__leafs_count}} - {{leafs__price}}р
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Форма лепестков</b>: {{drum__shape}}
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Оформление</b>: {{drum__color}} - {{color__price}}р
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Гравировка</b>: {{drum__etching}} - {{etching__price}}р
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Сумка</b>: {{drum__bag}} - {{bag__price}}р
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Палочки</b>: {{drum__sticks}}
-    </p>
-    <p
-      style="font-family: 'Arial', sans-serif; color: #070e2b; font-size: 15px;"
-    >
-      <b>Итого</b>: {{total__price}}р
-    </p> -->
-
     <table>
       <tbody>
         <tr>
-          <td>Размер</td>
+          <td><b>Размер</b></td>
           <td>{{drum__size}}</td>
           <td>{{size__price}}р</td>
         </tr>
         <tr>
-          <td>Количество лепестков</td>
+          <td><b>Количество лепестков</b></td>
           <td>{{drum__leafs_count}}</td>
           <td>{{leafs__price}}р</td>
         </tr>
         <tr>
-          <td>Форма лепестков</td>
+          <td><b>Форма лепестков</b></td>
           <td>{{drum__shape}}</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Оформление</td>
+          <td><b>Оформление</b></td>
           <td>{{drum__color}}</td>
           <td>{{color__price}}р</td>
         </tr>
         <tr>
-          <td>Гравировка</td>
+          <td><b>Гравировка</b></td>
           <td>{{drum__etching}}</td>
           <td>{{etching__price}}р</td>
         </tr>
         <tr>
-          <td>Сумка</td>
+          <td><b>Сумка</b></td>
           <td>{{drum__bag}}</td>
           <td>{{bag__price}}р</td>
         </tr>
         <tr>
-          <td>Палочки</td>
+          <td><b>Палочки</b></td>
           <td>{{drum__sticks}}</td>
           <td>-</td>
         </tr>

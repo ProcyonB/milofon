@@ -89,13 +89,24 @@ def form__shop(request):
                                                           "drum__bag": drum__bag, "bag__price": bag__price,
                                                           "drum__sticks": drum__sticks, "total__price": total__price})
         text_content = strip_tags(html_content)
-        email = EmailMultiAlternatives(
+        mail = EmailMultiAlternatives(
             "Заказ с сайта", text_content, "milofon.work@gmail.com",
             ['iampauline@mail.ru'])
-        email.attach_alternative(html_content, "text/html")
-        email.send(fail_silently=False)
-        # send_mail("Заказ с сайта", message, "milofon.work@gmail.com",
-        #           ['iampauline@mail.ru'], fail_silently=False)
+        mail.attach_alternative(html_content, "text/html")
+        mail.send(fail_silently=False)
+
+        html_content_buyer = render_to_string('milo_webpage/email2_to_buyer.html', context={'drum__size': drum__size, "size__price": size__price,
+                                                                                            "drum__leafs_count": drum__leafs_count,
+                                                                                            "leafs__price": leafs__price, "drum__shape": drum__shape,
+                                                                                            "drum__color": drum__color, "color__price": color__price,
+                                                                                            "drum__etching": drum__etching, "etching__price": etching__price,
+                                                                                            "drum__bag": drum__bag, "bag__price": bag__price,
+                                                                                            "drum__sticks": drum__sticks, "total__price": total__price})
+        text_content_buyer = strip_tags(html_content_buyer)
+        email_2 = EmailMultiAlternatives("Заказ с сайта MILOFON", text_content_buyer, "milofon.work@gmail.com",
+                                         [email])
+        email_2.attach_alternative(html_content_buyer, "text/html")
+        email_2.send()
         sent = True
         if sent:
             return HttpResponse('yes')
