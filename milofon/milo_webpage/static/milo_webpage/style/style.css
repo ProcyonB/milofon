@@ -321,7 +321,7 @@ figure h4 {
   text-transform: uppercase;
   color: #deb534;
   transition: 0.2s;
-  transform: translateY(32px);
+  transform: translateY(55px);
 }
 
 figure p {
@@ -529,7 +529,7 @@ figure:hover {
 
 .contact_form,
 textarea,
-button[type="submit"] {
+button[type="button"] {
   border-radius: 7px;
   outline: none;
   font-family: "Oswald", sans-serif;
@@ -541,7 +541,7 @@ button[type="submit"] {
   margin-bottom: 1rem;
 }
 
-button[type="submit"] {
+button[type="button"] {
   margin-top: 2rem;
 }
 
@@ -938,24 +938,17 @@ input[type="radio"]:disabled+label:before {
 
 input:focus:invalid {
   outline: none;
-}
+} */
 
 /* Это стиль для сообщений об ошибке */
 .error {
-  width: 100%;
-  padding: 0;
-
-  font-size: 80%;
-  color: white;
-  background-color: #be4e03;
-  border-radius: 0 0 5px 5px;
-
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  color: #ededed;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #f07321;
+  display: none;
 }
-
-.error.active {
-  padding: 0.3em;
-}
-
-*/

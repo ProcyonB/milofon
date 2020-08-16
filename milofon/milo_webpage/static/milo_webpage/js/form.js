@@ -15,8 +15,28 @@ function getCookie(name) {
 }
 const csrftoken = getCookie("csrftoken");
 
-$("#first_form").on("click", function (e) {
-  e.preventDefault();
+function validateEmail(email) {
+  var pattern = /^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,10}(?:\.[a-z]{2,10})?$/;
+  return pattern.test(String(email).toLowerCase());
+}
+
+$("#first_form").click(function (e) {
+  // e.preventDefault();
+  $(".error").fadeOut();
+  name = $("input[name=name]").val();
+  email = $("input[name=email]").val();
+  message = $("textarea[name=comment]").val();
+  fail = "";
+  if (name == "") fail = "Укажите имя";
+  if (!validateEmail(email)) fail = "Некорректный email";
+  if (message == "") fail = "Напишите сообщение";
+
+  if (fail != "") {
+    $(".error").text(fail);
+    $(".error").fadeIn();
+    return false;
+  }
+
   $.ajax({
     headers: { "X-CSRFToken": csrftoken },
     type: "POST",
@@ -40,8 +60,24 @@ $("#first_form").on("click", function (e) {
   });
 });
 
-$("#second_form_btn").on("click", function (e) {
-  e.preventDefault();
+$("#second_form_btn").click(function (e) {
+  // e.preventDefault();
+  $(".error").fadeOut();
+  name = $("input[name=name]").val();
+  email = $("input[name=email]").val();
+  message = $("textarea[name=comment]").val();
+  phone = $("input[name=phone]").val();
+
+  fail = "";
+  if (name == "") fail = "Укажите имя";
+  if (!validateEmail(email)) fail = "Некорректный email";
+  if (phone == "") fail = "Укажите номер для связи";
+  if (fail != "") {
+    $(".error").text(fail);
+    $(".error").fadeIn();
+    return false;
+  }
+
   drum_size = "";
   drum_leafs_count = "";
   drum_color = "";

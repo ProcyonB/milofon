@@ -167,18 +167,18 @@
           </div>
           <div class="img_radio">
             <img class="gl_pic" src="{% static '/milo_webpage/src/burning.png' %}" alt="" />
-            <input type="radio" name="color" id="burning" value="обжиг"/>
+            <input type="radio" name="color" id="burning" value="радужное закаливание"/>
             <label class='radio_label' for="burning"
-              >Обжиг + лак</label>
+              >Радужное закаливание</label>
               <p style="font-size: 1.2rem;">возможны варианты акцентов цвета</p>
 
-            <p><strong><span id="обжиг">800</span> р</strong></p>
+            <p><strong><span id="радужное закаливание">800</span> р</strong></p>
           </div>
       </div>
       <div class="row coloration_examples" style="justify-content: center;"><a href="#" style="text-decoration: none; color: #070e2b; " class="btn">Посмотреть примеры</a></div>
       <h3>Гравировка ручной работы
-        (только на обжиге)</h3>
-        <div class='row-color color_tooltip' data-title="Возможна только при выборе обжига">
+        (только на радужном закаливании)</h3>
+        <div class='row-color color_tooltip' data-title="Возможна только при выборе радужного закаливания">
         <div class="img_radio">
           <img class="gl_pic" src="{% static '/milo_webpage/src/size.svg' %}" alt="" />
           <input type="radio" name="etching" id="3x3" value="гравировка:3x3" />
@@ -239,7 +239,8 @@
         <input class="contact_form" type="tel" name="phone" id="" placeholder="+7(999)999-99-99" required>
         <input class="contact_form" type="url" name="social" id="" placeholder="Ссылка на аккаунт ВК (по желанию)">
         <textarea placeholder="Комментарий к заказу (предпочтительный способ связи, вопросы, пожелания...)" name='comment' rows="7" ></textarea>
-        <button id='second_form_btn' class="btn" type="submit">Заказать</button>
+        <span class="error"></span>
+        <button id='second_form_btn' class="btn" type="button">Заказать</button>
       </div>
       <div class="price">
         <p>Итого: <span id="total_price">0</span>  р</p>
@@ -253,8 +254,8 @@
   <footer class='shop'>
     <img src="{% static '/milo_webpage/src/layer.svg' %}" alt="logo" />
     <a class="animated_a" href="{% url 'main_page_url' %}" target="_blank">на главную</a>
-    <a class="animated_a hidden_mail" href="mailto:myedition@yandex.ru"
-              >myedition@yandex.ru</a
+    <a class="animated_a hidden_mail" href="mailto:mymilofon@gmail.com"
+              >mymilofon@gmail.com</a
             >
 
     
@@ -264,7 +265,7 @@
       href="https://www.instagram.com/milofonist/"
       target="_blank"
     ></a>
-    <a class="youtube" href="https://youtube.com/" target="_blank"></a>
+    <a class="youtube" href="https://www.youtube.com/channel/UCkgg4ldMMTY-9jT8VxyFmCQ?view_as=subscriber" target="_blank"></a>
     <p class="dev">
       Разработка сайта:
       <a class="animated_a dev_a" href="https://t.me/Procyon_B" target="_blank"
@@ -281,7 +282,7 @@
               <img src="{{ count.leafs_count_examples.url }}" alt="">
               {% endfor %}
       </div>
-      <a class="animated_a" style='color:#070e2b' href="http://">Больше примеров тут</a>
+      <a class="animated_a" style='color:#070e2b' href="https://vk.com/album-157161753_276744799" target="_blank">Больше примеров тут</a>
     </div>
   </div>
 
@@ -293,7 +294,7 @@
               <img src="{{ shape.examples_of_shape.url }}" alt="">
               {% endfor %}
       </div>
-      <a class="animated_a" style='color:#070e2b' href="http://">Больше примеров тут</a>
+      <a class="animated_a" style='color:#070e2b' href="https://vk.com/album-157161753_276744799" target="_blank">Больше примеров тут</a>
     </div>
   </div>
 
@@ -305,7 +306,7 @@
               <img src="{{ color.colorations_examples.url }}" alt="">
               {% endfor %}
       </div>
-      <a class="animated_a" style='color:#070e2b' href="http://">Больше примеров тут</a>
+      <a class="animated_a" style='color:#070e2b' href="https://vk.com/albums-157161753" target="_blank">Больше примеров тут</a>
     </div>
   </div>
 
@@ -317,7 +318,7 @@
               <img src="{{ etchings.etchings_examples.url }}" alt="">
               {% endfor %}
       </div>
-      <a class="animated_a" style='color:#070e2b' href="http://">Больше примеров тут</a>
+      <a class="animated_a" style='color:#070e2b' href="https://vk.com/album-157161753_267872761" target="_blank">Больше примеров тут</a>
     </div>
   </div>
 
