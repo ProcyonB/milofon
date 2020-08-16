@@ -52,10 +52,20 @@ $("#first_form").click(function (e) {
       $("input[name=name]").val("");
       $("input[name=email]").val("");
       $("textarea[name=comment]").val("");
-      alert("данные отправлены");
+      // alert("данные отправлены");
+      $(".success_first_popup").fadeIn();
+      $(".close").click(function (e) {
+        e.preventDefault();
+        $(".success_first_popup").fadeOut();
+      });
     },
     error: function (result) {
-      alert("Произошла ошибка. Попробуйте позже.");
+      // alert("Произошла ошибка. Попробуйте позже.");
+      $(".error_first_popup").fadeIn();
+      $(".close").click(function (e) {
+        e.preventDefault();
+        $(".error_first_popup").fadeOut();
+      });
     },
   });
 });
@@ -195,10 +205,20 @@ $("#second_form_btn").click(function (e) {
       // sticks.checked = false;
       // document.getElementById("total_price").innerHTML = 0;
       // document.getElementById("fixed").innerHTML = 0;
-      alert("данные отправлены  ");
+      // alert("данные отправлены  ");
+      $(".success_second_popup").fadeIn();
+      $(".close").click(function (e) {
+        e.preventDefault();
+        $(".success_second_popup").fadeOut();
+      });
     },
     error: function (result) {
-      alert("Произошла ошибка. Попробуйте позже.");
+      // alert("Произошла ошибка. Попробуйте позже.");
+      $(".error_first_popup").fadeIn();
+      $(".close").click(function (e) {
+        e.preventDefault();
+        $(".error_first_popup").fadeOut();
+      });
     },
   });
 });
