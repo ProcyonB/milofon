@@ -69,10 +69,18 @@ $(document).ready(function () {
     e.preventDefault();
     $(".etching_examples__popup").fadeOut();
   });
+  $("#check_policy").on("click", function (e) {
+    e.preventDefault();
+    $(".policy_popup").fadeIn();
+  });
+  $(".close").click(function (e) {
+    e.preventDefault();
+    $(".policy_popup").fadeOut();
+  });
 
   // слайдер
   $(".slider").slick({
-    dots: true,
+    // dots: true,
     cssEase: "ease",
     arrows: true,
   });
