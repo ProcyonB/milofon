@@ -96,7 +96,7 @@ html {
 
 .slider .slick-arrow.slick-prev {
   left: 1.5rem;
-  background: url("../src/prev.svg");
+  background: url("../src/prev.svg") no-repeat center center;
   border: none;
 }
 
@@ -403,9 +403,9 @@ figure:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.popup img {
+/* .popup img {
   max-width: 90%;
-}
+} */
 
 .popup_window {
   position: fixed;
@@ -438,11 +438,11 @@ figure:hover {
 }
 
 .examples_slider .slick-arrow.slick-prev {
-  left: -1.2rem;
+  left: -3.5rem;
 }
 
 .examples_slider .slick-arrow.slick-next {
-  right: -1.2rem;
+  right: -3.5rem;
 }
 
 .close {
@@ -698,8 +698,8 @@ input[type="checkbox"] {
   opacity: 0;
 }
 
-input[type="radio"] + .radio_label:before,
-input[type="checkbox"] + .checkbox_label:before {
+input[type="radio"]+.radio_label:before,
+input[type="checkbox"]+.checkbox_label:before {
   content: "\2714";
   border-radius: 50%;
   display: inline-block;
@@ -721,12 +721,12 @@ input[type="checkbox"] + .checkbox_label:before {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + label:before,
-input[type="checkbox"]:checked + .checkbox_label:before {
+input[type="radio"]:checked+label:before,
+input[type="checkbox"]:checked+.checkbox_label:before {
   font-size: 1.5rem;
 }
 
-input[type="radio"]:disabled + label:before {
+input[type="radio"]:disabled+label:before {
   border-color: #ededed;
 }
 
@@ -771,8 +771,8 @@ input[type="radio"]:disabled + label:before {
 }
 
 #big {
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
 }
 
 .constuctor-item {
@@ -834,6 +834,7 @@ input[type="radio"]:disabled + label:before {
   text-transform: uppercase;
   color: #deb534;
   text-align: left;
+  margin-left: 1.5rem;
 }
 
 #price_comment {

@@ -107,6 +107,14 @@
     .remove {
         font-size: 1.5rem;
     }
+
+    .examples_slider .slick-arrow.slick-prev {
+        left: 2rem;
+    }
+
+    .examples_slider .slick-arrow.slick-next {
+        right: 2rem;
+    }
 }
 
 @media (max-width: 412px) {

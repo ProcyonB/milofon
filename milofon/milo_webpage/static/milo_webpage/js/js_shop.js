@@ -17,7 +17,7 @@ leafs_count = document.getElementById("10");
 min_leafs_count = document.getElementById("8");
 leafs_shape = document.getElementById("leafs");
 cosm_price = document.getElementById("космос");
-burning_price = document.getElementById("обжиг");
+burning_price = document.getElementById("радужное закаливание");
 bag_price = 0;
 
 total_price = 0;
@@ -149,7 +149,7 @@ for (i = 0; i < size.length; i++) {
 
 // зависимости от цвета
 for (i = 0; i < colors.length; i++) {
-  if (colors[i].value !== "обжиг") {
+  if (colors[i].value !== "радужное закаливание") {
     colors[i].onchange = function () {
       for (i = 0; i < etching.length; i++) {
         etching[i].disabled = "disabled";
