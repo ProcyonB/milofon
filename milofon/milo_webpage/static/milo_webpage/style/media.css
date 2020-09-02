@@ -1,12 +1,18 @@
+@media (min-width: 1510px) {
+    html {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 900px) {
     html {
         font-size: 8px;
     }
 
-    .decor {
+    /* .decor {
         margin-top: 3rem;
         margin-right: 2rem;
-    }
+    } */
 
     .decor h3 {
         font-size: 2.5rem;
@@ -28,22 +34,22 @@
     }
 }
 
-@media (max-width: 740px) {
+/* @media (max-width: 740px) {
     .first-screen {
         height: 80vh;
     }
-}
+} */
 
-@media (max-width: 800px) {
-    .decor {
+/* @media (max-width: 800px) { */
+/* .decor {
         margin-top: 7rem;
         margin-right: 2rem;
-    }
+    } */
 
-    .first-screen {
+/* .first-screen {
         height: 70vh;
     }
-}
+} */
 
 @media (max-width: 680px) {
     .about_manufactory {
@@ -56,11 +62,16 @@
         height: auto;
     }
 
+    .decor {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
 
 }
 
 @media (max-width: 600px) {
-    .decor {
+    /* .decor {
         margin: 2rem auto;
         border-radius: 5px;
     }
@@ -68,7 +79,7 @@
     .contact {
         height: auto;
         background: #ededed;
-    }
+    } */
 
     footer {
         font-size: 1.5rem;
@@ -80,11 +91,12 @@
     }
 }
 
+/* 
 @media (max-width: 560px) {
     .first-screen {
         height: 80vh;
     }
-}
+} */
 
 @media (max-width: 500px) {
     html {
@@ -100,9 +112,9 @@
         height: auto;
     }
 
-    .first-screen {
+    /* .first-screen {
         height: 60vh;
-    }
+    } */
 
     .remove {
         font-size: 1.5rem;
@@ -123,9 +135,9 @@
         position: absolute;
     }
 
-    .first-screen {
+    /* .first-screen {
         height: 60vh;
-    }
+    } */
 }
 
 @media (max-width: 351px) {

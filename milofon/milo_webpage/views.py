@@ -25,7 +25,7 @@ def form_funс(request):
         text_content = strip_tags(html_content)
         email = EmailMultiAlternatives(
             "Сообщение с сайта", text_content, "milofon.work@gmail.com",
-            ['iampauline@mail.ru'])
+            ['mymilofon@gmail.com'])
         email.attach_alternative(html_content, "text/html")
         email.send(fail_silently=False)
 
@@ -91,7 +91,7 @@ def form__shop(request):
         text_content = strip_tags(html_content)
         mail = EmailMultiAlternatives(
             "Заказ с сайта", text_content, "milofon.work@gmail.com",
-            ['iampauline@mail.ru'])
+            ['mymilofon@gmail.com'])
         mail.attach_alternative(html_content, "text/html")
         mail.send(fail_silently=False)
 

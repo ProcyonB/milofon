@@ -28,18 +28,20 @@
     <!-- Первый экран -->
     <section class="header">
       <div class="first-line">
-        <a class="animated_a" href="#gluk">о глюкофонах</a>
-        <a class="animated_a" href="{% url 'create_page_url' %}">конструктор</a>
+        <a class="animated_a header_a" href="#gluk">о глюкофонах</a>
+        <a class="animated_a header_a" href="{% url 'create_page_url' %}"
+          >заказать</a
+        >
       </div>
       <div class="second-line">
-        <a class="animated_a" href="#manufactory">о мастерской</a>
-        <a class="animated_a" href="#contacts">контакты</a>
+        <a class="animated_a header_a" href="#manufactory">о мастерской</a>
+        <a class="animated_a header_a" href="#contacts">контакты</a>
       </div>
     </section>
     <!-- наша цель -->
     <section class="our_goal wow fadeInDown">
       <h2 class="wow fadeInDown">
-        наша <span class="goal">цель</span> - мировое господство глюкофонов
+        <span class="goal"></span>
       </h2>
     </section>
     <!-- Слайдер -->
@@ -53,7 +55,7 @@
         </h5>
         <div class="row" style="justify-content: center;">
           <a
-            href="../milofon/shop.html"
+            href="{% url 'create_page_url' %}"
             style="text-decoration: none;"
             class="btn"
             >Собрать глюкофон</a
@@ -69,7 +71,7 @@
         </h5>
         <div class="row" style="justify-content: center;">
           <a
-            href="../milofon/shop.html"
+            href="{% url 'create_page_url' %}"
             style="text-decoration: none;"
             class="btn"
             >Собрать глюкофон</a
@@ -86,7 +88,7 @@
         </h5>
         <div class="row" style="justify-content: center;">
           <a
-            href="../milofon/shop.html"
+            href="{% url 'create_page_url' %}"
             style="text-decoration: none;"
             class="btn"
             >Собрать глюкофон</a
@@ -104,7 +106,7 @@
         </h5>
         <div class="row" style="justify-content: center;">
           <a
-            href="../milofon/shop.html"
+            href="{% url 'create_page_url' %}"
             style="text-decoration: none;"
             class="btn"
             >Собрать глюкофон</a
@@ -165,8 +167,9 @@
     <section class="charity wow fadeIn">
       <h2>благотворительная деятельность</h2>
       <p>
-        Далеко-далеко за словесными горами в стране гласных и согласных живут
-        рыбные тексты. Своего власти назад строчка гор.
+        Мастерская Milofon сотрудничает с социальными организациями и
+        поддерживает благотворительные программы. Напишите нам, если вы хотите,
+        чтобы мы приняли участие в жизни вашего проекта.
       </p>
     </section>
     <!-- обратная связь -->
@@ -226,7 +229,10 @@
         </div>
         <div class="columns wow fadeInRight">
           <p>
-            VK:<a class="animated_a" href="https://vk.com/milofonproject"
+            VK:<a
+              class="animated_a"
+              href="https://vk.com/milofonproject"
+              target="_blank"
               >milofonproject</a
             >
           </p>
@@ -253,7 +259,7 @@
       <img src="{% static '/milo_webpage/src/layer.svg'%}" alt="logo" />
       <a class="animated_a to_hidden" href="#gluk">о глюкофонах</a>
       <a class="animated_a to_hidden" href="#manufactory">о мастерской</a>
-      <a class="animated_a" href="{% url 'create_page_url' %}">конструктор</a>
+      <a class="animated_a" href="{% url 'create_page_url' %}">заказать</a>
       <a class="vk" href="https://vk.com/milofonproject" target="_blank"></a>
       <a
         class="inst"
@@ -279,7 +285,11 @@
     <div class="popup consultation_popup">
       <div class="popup_window">
         <button class="close">&times;</button>
-        <img src="{% static '/milo_webpage/src/fern.jpg'%}" alt="" />
+        <img
+          class="feature_pic"
+          src="{% static '/milo_webpage/src/consultation.png'%}"
+          alt=""
+        />
         <h3>Консультирование</h3>
         <p>
           С нами легко связаться по электронной почте, через социальные сети или
@@ -303,7 +313,11 @@
     <div class="popup upgrade_popup">
       <div class="popup_window">
         <button class="close">&times;</button>
-        <img src="{% static '/milo_webpage/src/fern.jpg'%}" alt="" />
+        <img
+          class="feature_pic"
+          src="{% static '/milo_webpage/src/remont.png'%}"
+          alt=""
+        />
         <h3>Ремонт и настройка</h3>
         <p>
           Уже несколько лет мастерская Milofon не только производит музыкальные
@@ -327,7 +341,11 @@
     <div class="popup rent_popup">
       <div class="popup_window">
         <button class="close">&times;</button>
-        <img src="{% static '/milo_webpage/src/fern.jpg'%}" alt="" />
+        <img
+          class="feature_pic"
+          src="{% static '/milo_webpage/src/rent.png'%}"
+          alt=""
+        />
         <h3>Аренда</h3>
         <p>
           Если вы не знаете какой строй вам подойдет и хотите «пообщаться» с
@@ -352,7 +370,11 @@
     <div class="popup activities_popup">
       <div class="popup_window">
         <button class="close">&times;</button>
-        <img src="{% static '/milo_webpage/src/fern.jpg'%}" alt="" />
+        <img
+          class="feature_pic"
+          src="{% static '/milo_webpage/src/activities.png'%}"
+          alt=""
+        />
         <h3>Мероприятия</h3>
         <p>
           Мы не только производим глюкофоны, но и играем на них, а также учим

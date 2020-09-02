@@ -15,7 +15,7 @@ html {
 }
 
 .header {
-  background: url("../src/milo1.png") center;
+  background: url("../src/pic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -34,6 +34,14 @@ html {
   color: #ededed;
   transition: all 0.4s;
   position: relative;
+}
+
+.header_a {
+  font-size: 3rem;
+  background-color: #ededed;
+  color: #070e2b;
+  border-radius: 5px;
+  /* margin: 1.5rem; */
 }
 
 .animated_a::before {
@@ -253,7 +261,7 @@ html {
 }
 
 .our_goal {
-  height: 50vh;
+  height: 80vh;
   background: url("../src/grass.png") no-repeat;
   background-size: cover;
   margin-top: 1rem;
@@ -276,7 +284,7 @@ html {
 }
 
 .about_manufactory {
-  height: auto;
+  height: 100vh;
   background: url("../src/guys.jpg") no-repeat center;
   background-size: cover;
   margin-top: 1rem;
@@ -403,9 +411,10 @@ figure:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* .popup img {
+.feature_pic {
   max-width: 90%;
-} */
+  max-height: 50%;
+}
 
 .popup_window {
   position: fixed;
@@ -491,24 +500,23 @@ figure:hover {
 }
 
 .contact {
-  /* background: url("../src/contact.png") no-repeat; */
-  background-size: contain;
+  background: url("../src/contact.jpg") no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .decor {
   width: 35rem;
   height: 45rem;
-  background: url("../src/leafs.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 2rem;
 }
 
@@ -517,7 +525,7 @@ figure:hover {
   font-weight: bold;
   font-size: 3.5rem;
   text-transform: uppercase;
-  color: #ededed;
+  color: #070e2b;
 }
 
 .contact_form,
@@ -538,10 +546,14 @@ button[type="button"] {
   margin-top: 2rem;
 }
 
-#policy,
-#check_policy {
+#policy {
   font-family: "Oswald", sans-serif;
-  color: #ededed;
+  background-color: #ededed;
+  color: #070e2b;
+  width: 70%;
+  padding: 0.3rem;
+  border-radius: 7px;
+  margin-top: 1rem;
 }
 
 .contacts {
@@ -633,9 +645,10 @@ footer a {
 }
 
 .first-screen {
-  height: 90vh;
+  height: auto;
   background: url("../src/grass.png") no-repeat center;
   background-size: cover;
+  padding-bottom: 2rem;
 }
 
 .h1 {
@@ -698,8 +711,8 @@ input[type="checkbox"] {
   opacity: 0;
 }
 
-input[type="radio"]+.radio_label:before,
-input[type="checkbox"]+.checkbox_label:before {
+input[type="radio"] + .radio_label:before,
+input[type="checkbox"] + .checkbox_label:before {
   content: "\2714";
   border-radius: 50%;
   display: inline-block;
@@ -721,12 +734,12 @@ input[type="checkbox"]+.checkbox_label:before {
   cursor: pointer;
 }
 
-input[type="radio"]:checked+label:before,
-input[type="checkbox"]:checked+.checkbox_label:before {
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + .checkbox_label:before {
   font-size: 1.5rem;
 }
 
-input[type="radio"]:disabled+label:before {
+input[type="radio"]:disabled + label:before {
   border-color: #ededed;
 }
 
@@ -818,12 +831,13 @@ input[type="radio"]:disabled+label:before {
 }
 
 .order_form {
-  transform: none;
+  /* transform: none; */
   max-width: 70%;
   max-height: 80%;
   background: #ededed;
   opacity: 0.8;
-  border-radius: 10%;
+  border-radius: 10px;
+  padding: 2rem;
   transition: 0.2s;
 }
 
@@ -943,8 +957,8 @@ input[type="radio"]:disabled+label:before {
 }
 
 img.rot {
-  animation: 30s linear 0s normal none infinite running rot;
-  -webkit-animation: 30s linear 0s normal none infinite running rot;
+  animation: 30s linear 0s normal none infinite running;
+  -webkit-animation: 30s linear 0s normal none infinite running;
   width: 100px;
 }
 
